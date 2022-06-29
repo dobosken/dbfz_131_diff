@@ -1,0 +1,116 @@
+--- 1.30/BBS_OSM.bbs	2022-06-29 16:26:24.000000000 +0200
++++ 1.31/BBS_OSM.bbs	2022-06-29 17:54:20.000000000 +0200
+@@ -1713,6 +1713,9 @@
+   createObject: s32'kidan_5D', 0
+   StackControlObjectEx: 11, 4, 23, 1
+   StackControlObject: 11, 1
++  applyTo: 11
++    whiffCrouch: 1
++    endApply: 
+   storeValue: (VARIABLE), 52, (STATIC), 0
+   createObject: s32'cmn_kidan_smoke', (PLAYER_LAND)
+   CommonSetSE: s32'KidanFire', 0, 100
+@@ -3227,10 +3230,10 @@
+   horizontalMomentum: 85
+   createParticle: s32'bg_dashbrake_default', (PLAYER_LAND)
+   sprite: s32'osm204_19', 2
+-  sprite: s32'osm204_20', 4
+-  sprite: s32'osm204_21', 3
+-  sprite: s32'osm204_22', 3
+-  sprite: s32'osm204_23', 3
++  sprite: s32'osm204_20', 2
++  sprite: s32'osm204_21', 2
++  sprite: s32'osm204_22', 2
++  sprite: s32'osm204_23', 2
+   endState: 
+ 
+ beginState: s32'NmlAtk5CExe'
+@@ -3732,6 +3735,9 @@
+   createObject: s32'kidan_5D', 0
+   StackControlObjectEx: 11, 4, 23, 1
+   StackControlObject: 11, 1
++  applyTo: 11
++    whiffCrouch: 1
++    endApply: 
+   storeValue: (VARIABLE), 52, (STATIC), 0
+   createObject: s32'cmn_kidan_smoke', (PLAYER_LAND)
+   CommonSetSE: s32'KidanFire', 0, 100
+@@ -5019,7 +5025,7 @@
+   untechAmount: 37
+   wallBounceInCornerOnly: 1
+   wallBounceXVelocityPercent: 0
+-  hitAirPushbackX: 15000
++  hitAirPushbackX: 10000
+   hitAirPushbackY: 20000
+   pushbackX: 0
+   tensionGainOnConnect: 0
+@@ -5832,11 +5838,11 @@
+   createObject: s32'Sennou_Hold', (PLAYER)
+   sprite: s32'osm403_04', 3
+   sprite: s32'osm403_05', 3
+-  sprite: s32'osm403_06', 3
+-  sprite: s32'osm403_07', 3
+-  sprite: s32'osm403_08', 3
+-  sprite: s32'osm403_09', 3
+-  sprite: s32'osm403_10', 2
++  sprite: s32'osm403_06', 2
++  sprite: s32'osm403_07', 2
++  sprite: s32'osm403_08', 2
++  sprite: s32'osm403_09', 2
++  sprite: s32'osm403_10', 1
+   sprite: s32'osm403_10', 1
+   endState: 
+ 
+@@ -5864,11 +5870,11 @@
+   sprite: s32'osm403_06', 3
+   sprite: s32'osm403_06', 5
+   beginLabel: s32'landing'
+-  sprite: s32'osm403_07', 3
++  sprite: s32'osm403_07', 2
+   createObject: s32'Sennou_Hold', (PLAYER)
+-  sprite: s32'osm403_08', 3
+-  sprite: s32'osm403_09', 3
+-  sprite: s32'osm403_10', 2
++  sprite: s32'osm403_08', 2
++  sprite: s32'osm403_09', 1
++  sprite: s32'osm403_10', 1
+   sprite: s32'osm403_10', 1
+   endState: 
+ 
+@@ -5893,11 +5899,11 @@
+   createObject: s32'Sennou_Hold', (PLAYER)
+   sprite: s32'osm403_04', 3
+   sprite: s32'osm403_05', 3
+-  sprite: s32'osm403_06', 3
+-  sprite: s32'osm403_07', 3
+-  sprite: s32'osm403_08', 3
+-  sprite: s32'osm403_09', 3
+-  sprite: s32'osm403_10', 2
++  sprite: s32'osm403_06', 2
++  sprite: s32'osm403_07', 2
++  sprite: s32'osm403_08', 2
++  sprite: s32'osm403_09', 2
++  sprite: s32'osm403_10', 1
+   sprite: s32'osm403_10', 1
+   endState: 
+ 
+@@ -6377,6 +6383,9 @@
+   StopBankSE: 17, 20
+   deactivateObjectByName: s32'osm405_BodyAura_Eff'
+   deactivateObjectByName: s32'cmn_kamehameha_shadow'
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'osm405_13', 3
+   sprite: s32'osm405_14', 3
+   endLabel: 
+@@ -6479,6 +6488,9 @@
+   StopBankSE: 17, 20
+   deactivateObjectByName: s32'osm405_BodyAura_Eff'
+   deactivateObjectByName: s32'cmn_kamehameha_shadow'
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'osm405_13', 3
+   sprite: s32'osm405_14', 3
+   endLabel: 

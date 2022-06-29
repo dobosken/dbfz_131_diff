@@ -1,0 +1,210 @@
+--- 1.30/BBS_TOP.bbs	2022-06-29 16:26:27.000000000 +0200
++++ 1.31/BBS_TOP.bbs	2022-06-29 17:54:21.000000000 +0200
+@@ -3266,7 +3266,7 @@
+   hitOTG: 1
+   callSubroutine: s32'cmnAtkLevel_3_AtkInit'
+   setProration: 90
+-  damage1: 900
++  damage1: 600
+   groundHitEffect: (AIR_FACE_UP)
+   airHitEffect: (AIR_FACE_UP)
+   untechAmount: 22
+@@ -3278,16 +3278,17 @@
+   guardType: (LOW)
+   noHitstunScaling: 1
+   AtkFrontDirection: 0
++  AtkHoseiGuardBalance: 1000
+   PopSpeedX: 
+   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), (SpeedX), (STATIC), 80000
+     physicsImpulseX: 80000
+     endIf: 
+   horizontalMomentum: 80
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 10
+-    damage1: 1000
++    damage1: 700
+     endIf: 
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
+-    damage1: 1100
++    damage1: 800
+     callSubroutine: s32'cmnSpecialAttackExInit'
+     endIf: 
+   if: (VARIABLE), 4
+@@ -3632,6 +3633,7 @@
+     AtkAdditionalHitCount: 1
+     callSubroutine: s32'cmnSpecialAttackExInit'
+     AtkZReversal: 1
++    setProration: 90
+     endIf: 
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
+     haltMomentum: 1
+@@ -3653,6 +3655,7 @@
+     callSubroutine: s32'cmnSpecialAttackExInit'
+     haltMomentum: 1
+     AtkZReversal: 1
++    setProration: 90
+     AtkHead: 1
+     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), (PosY), (STATIC), 60000
+       setPositionY: 60000
+@@ -3683,6 +3686,7 @@
+   AtkSuikomiY: 0, 0, 0, 0, 0
+   AtkAdditionalHitCount: 0
+   AtkDamageEffect: 4, s32'cmn_slash_s'
++  blockstunAmount: 12
+   AtkHitCommonSEReset: s32'ARC_BTL_TRS_ShngSlsh_Hit_1'
+   guardSoundEffect: s32''
+   guardSoundEffect: s32'ARC_BTL_VTB_Barrier_Guard'
+@@ -3696,6 +3700,7 @@
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
+     callSubroutine: s32'cmnSpecialAttackExInit'
+     damage1: 1581
++    setProration: 90
+     endIf: 
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
+     endIf: 
+@@ -3705,11 +3710,13 @@
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 21
+     callSubroutine: s32'cmnSpecialAttackExInit'
+     damage1: 1581
++    setProration: 90
+     endIf: 
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 30
+     damage1: 852
+     callSubroutine: s32'cmn_AssistHosei'
+     hitAirPushbackX: 30000
++    blockstunAmount: 15
+     endIf: 
+   if: (VARIABLE), 4
+     AtkDamagePer: 121
+@@ -4244,6 +4251,7 @@
+     callSubroutine: s32'cmnSpecialAttackExInit'
+     headInvul: 1
+     AtkZReversal: 1
++    setProration: 90
+     endIf: 
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
+     haltMomentum: 1
+@@ -4256,6 +4264,7 @@
+     haltMomentum: 1
+     headInvul: 1
+     AtkZReversal: 1
++    setProration: 90
+     endIf: 
+   if: (VARIABLE), 4
+     AtkDamagePer: 121
+@@ -4297,6 +4306,7 @@
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 20
+     damage1: 1019
+     callSubroutine: s32'cmnSpecialAttackExInit'
++    setProration: 90
+     endIf: 
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
+     endIf: 
+@@ -4306,6 +4316,7 @@
+   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 21
+     damage1: 1019
+     callSubroutine: s32'cmnSpecialAttackExInit'
++    setProration: 90
+     endIf: 
+   if: (VARIABLE), 4
+     AtkDamagePer: 121
+@@ -4844,10 +4855,10 @@
+       StopBankSE: 17, 20
+       endUpon: 
+     endUpon: 
+-  sprite: s32'top403_00', 2
++  sprite: s32'top403_00', 3
+   Hair: 6
+-  sprite: s32'top403_01', 2
+-  sprite: s32'top403_02', 2
++  sprite: s32'top403_01', 3
++  sprite: s32'top403_02', 3
+   RandomVoice: s16'vxxx211', 100, s16'vxxx212', 100, s16'vxxx213', 100, s16'', 0
+   sprite: s32'top403_03', 2
+   createObject: s32'top403_Throw', (PLAYER)
+@@ -4951,11 +4962,11 @@
+       StopBankSE: 17, 20
+       endUpon: 
+     endUpon: 
+-  sprite: s32'top403_17', 2
++  sprite: s32'top403_17', 3
+   Hair: 6
+   haltMomentum: 1
+-  sprite: s32'top403_18', 2
+-  sprite: s32'top403_19', 2
++  sprite: s32'top403_18', 3
++  sprite: s32'top403_19', 3
+   createObject: s32'top403_Throw_Air', (PLAYER)
+   characterSfx: s32'ARC_BTL_TOP_FSwip_Chrg'
+   RandomVoice: s16'vxxx211', 100, s16'vxxx212', 100, s16'vxxx213', 100, s16'', 0
+@@ -5416,6 +5427,11 @@
+   recoveryState: 
+   sprite: s32'top430_16', 3
+   sprite: s32'top430_14', 3
++  sprite: s32'top430_15', 3
++  sprite: s32'top430_16', 3
++  sprite: s32'top430_14', 3
++  sprite: s32'top430_15', 3
++  sprite: s32'top430_16', 3
+   sprite: s32'top430_17', 4
+   resetGravity: 
+   verticalMomentum: 100
+@@ -5469,6 +5485,7 @@
+     jumpToStateOnHit: s32'FEnergy_Exe'
+     AtkRange: 400000, 0, 300000, 0
+     AtkYogore: 0
++    canGrabDuringHitstun: 0
+     upon: 36
+       ifNot: (VARIABLE), (IN_BATTLE)
+         recoveryState: 
+@@ -5477,12 +5494,12 @@
+     endUpon: 
+   sprite: s32'top431_00', 3
+   sprite: s32'top431_01', 2
+-  enableSuperArmor: 1
+   tensionUsage: 10000
+   addPositionX: -30000
+   createObject: s32'top431_Tame01', (PLAYER)
+   createObject: s32'top431_Tame02', (PLAYER)
+   characterSfx: s32'ARC_BTL_TOP_FEnergy_Chrg'
++  tensionCooldown: 300
+   sprite: s32'top431_02', 2
+   addPositionX: -30000
+   sprite: s32'top431_03', 2
+@@ -5493,6 +5510,7 @@
+   characterSfx: s32'ARC_BTL_TOP_FEnergy_Shot1'
+   sprite: s32'top431_08', 2
+   sprite: s32'top431_09', 1
++  enableSuperArmor: 1
+   FaceReset: 500
+   addPositionX: 150000
+   createObject: s32'top431_Sphere', (PLAYER)
+@@ -5521,8 +5539,8 @@
+     callSubroutine: s32'cmnAtkLevel_4_AtkInit'
+     callSubroutine: s32'cmnAtkTemplNageExe'
+     AtkHitCommonSEReset: s32'dammy'
+-    damage1: 100
+-    minimalDamagePercent: 21
++    damage1: 125
++    minimalDamagePercent: 25
+     groundHitEffect: 20
+     airHitEffect: 20
+     hitstunAmount: 100
+@@ -5534,6 +5552,7 @@
+     AtkNextHitActionName: s32'FEnergy_Exe'
+     AtkDamageEffect: 1, s32'cmn_hit_m'
+     AtkAdditionalHitCount: 1
++    callSubroutine: s32'cmn_KuzushiHosei'
+     DmgGuardStopCount: 
+     ForceUnactivateObjects: 
+     ScreenCollision: 0
+@@ -5620,8 +5639,8 @@
+   physicsImpulseX: -100000
+   horizontalMomentum: 80
+   hit: 
+-  damage1: 1121
+-  minimalDamagePercent: 36
++  damage1: 1245
++  minimalDamagePercent: 25
+   groundHitEffect: (AIR_FACE_UP)
+   airHitEffect: (AIR_FACE_UP)
+   hitAirPushbackX: 25000

@@ -1,0 +1,85 @@
+--- 1.30/BBS_BUN.bbs	2022-06-29 16:26:10.000000000 +0200
++++ 1.31/BBS_BUN.bbs	2022-06-29 17:54:16.000000000 +0200
+@@ -2743,7 +2743,7 @@
+   FaceReset: 170
+   HairReset: 4
+   sprite: s32'bun261_01', 1
+-  sprite: s32'bun261_02', 2
++  sprite: s32'bun261_02', 1
+   sprite: s32'bun261_03', 2
+   AttackVoice: 1, -1
+   cmnSfx: s32'ARC_BTL_CMN_Furi_FuriOroshi'
+@@ -2785,10 +2785,10 @@
+         endIf: 
+       endUpon: 
+     endUpon: 
+-  sprite: s32'bun262_00', 2
++  sprite: s32'bun262_00', 1
+   FaceReset: 170
+   HairReset: 4
+-  sprite: s32'bun262_01', 2
++  sprite: s32'bun262_01', 1
+   sprite: s32'bun262_02', 2
+   AttackVoice: 2, -1
+   sprite: s32'bun262_03', 2
+@@ -3143,6 +3143,7 @@
+   sprite: s32'bun400_00', 3
+   HairReset: 4
+   sprite: s32'bun400_01', 3
++  headInvul: 1
+   sprite: s32'bun400_02', 2
+   sprite: s32'bun400_02', 1
+   PushCollisionHeight: 450000
+@@ -3158,6 +3159,7 @@
+   cmnSfx: s32'ARC_BTL_CMN_GK_Jump'
+   sprite: s32'bun400_04', 2
+   PushCollisionHeight: -1
++  headInvul: 0
+   sprite: s32'bun400_05', 2
+   PerSpeedX: 30
+   PerSpeedY: 10
+@@ -3220,6 +3222,7 @@
+   sprite: s32'bun400_00', 3
+   HairReset: 4
+   sprite: s32'bun400_01', 3
++  headInvul: 1
+   sprite: s32'bun400_02', 2
+   sprite: s32'bun400_02', 1
+   PushCollisionHeight: 450000
+@@ -3235,6 +3238,7 @@
+   cmnSfx: s32'ARC_BTL_CMN_GK_Jump'
+   sprite: s32'bun400_04', 2
+   PushCollisionHeight: -1
++  headInvul: 0
+   ScreenAdditionalWidth: -1
+   ignorePushback: 1
+   setNoCollision: 0
+@@ -3301,6 +3305,7 @@
+   sprite: s32'bun400_00', 2
+   HairReset: 4
+   callSubroutine: s32'cmnSpecialAttackExInit'
++  headInvul: 1
+   sprite: s32'bun400_01', 2
+   sprite: s32'bun400_02', 1
+   sprite: s32'bun400_02', 1
+@@ -3325,6 +3330,7 @@
+     endUpon: 
+   sprite: s32'bun400_04', 2
+   PushCollisionHeight: -1
++  headInvul: 0
+   sprite: s32'bun400_05', 2
+   PerSpeedY: 10
+   setGravity: 100
+@@ -4078,9 +4084,9 @@
+   headInvul: 1
+   physicsImpulseX: 20000
+   horizontalMomentum: 70
+-  sprite: s32'bun401_02', 2
+-  sprite: s32'bun401_03', 2
+-  sprite: s32'bun401_04', 3
++  sprite: s32'bun401_02', 1
++  sprite: s32'bun401_03', 1
++  sprite: s32'bun401_04', 2
+   cmnSfx: s32'ARC_BTL_CMN_GK_Jump'
+   sprite: s32'bun401_05', 2
+   hit: 

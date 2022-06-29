@@ -1,0 +1,108 @@
+--- 1.30/BBS_TNN.bbs	2022-06-29 16:26:26.000000000 +0200
++++ 1.31/BBS_TNN.bbs	2022-06-29 17:54:21.000000000 +0200
+@@ -409,7 +409,6 @@
+     SkillForceDisableFlag: 1
+     addMoveFlag: (VARIABLE_4_FALSE)
+     addMoveFlag: 151
+-    disableCancelsIntoMove: 1
+     SkillEstLevelLimit: 30
+     SkillEstTagXFarPanashi: 
+     SkillEstTagSukidarake: 
+@@ -512,7 +511,6 @@
+     addMoveFlag: (THREE)
+     addMoveFlag: (VARIABLE_4_FALSE)
+     addMoveFlag: 151
+-    disableCancelsIntoMove: 1
+     SkillEstLevelLimit: 40
+     SkillEstPoint: 30
+     cpuIsThrow: 
+@@ -2677,9 +2675,9 @@
+   recoveryState: 
+   sprite: s32'tnn231_08', 2
+   sprite: s32'tnn231_09', 3
+-  sprite: s32'tnn231_10', 3
+-  sprite: s32'tnn231_11', 3
+-  sprite: s32'tnn231_12', 3
++  sprite: s32'tnn231_10', 2
++  sprite: s32'tnn231_11', 2
++  sprite: s32'tnn231_12', 2
+   endState: 
+ 
+ beginState: s32'NmlAtk6B'
+@@ -2785,9 +2783,9 @@
+   sprite: s32'tnn204_10', 3
+   sprite: s32'tnn204_11', 3
+   HairReset: 0
+-  sprite: s32'tnn204_12', 3
+-  sprite: s32'tnn204_13', 3
+-  sprite: s32'tnn204_14', 3
++  sprite: s32'tnn204_12', 2
++  sprite: s32'tnn204_13', 2
++  sprite: s32'tnn204_14', 2
+   endState: 
+ 
+ beginState: s32'NmlAtk2C'
+@@ -4823,12 +4821,13 @@
+   sprite: s32'tnn404_18', 3
+   haltMomentum: 1
+   clearRegisteredUponCode: (FRAME_STEP)
+-  physicsImpulseX: 50000
++  physicsImpulseX: 55000
+   horizontalMomentum: 100
+   autoAirTurn: 1
+-  physicsImpulseY: 20000
++  physicsImpulseY: 35000
+   SkillFinishToDownLoop: 1
+   resetGravity: 
++  PushCollisionHeightLow: 268435455
+   sprite: s32'tnn404_19', 3
+   horizontalMomentum: 90
+   sprite: s32'tnn022_00', 3
+@@ -5034,10 +5033,22 @@
+   PushCollisionHeightLow: 40000
+   RandomVoice: s16'vxxx207', 100, s16'vxxx208', 100, s16'', 0, s16'', 0
+   characterSfx: s32'ARC_BTL_TNN_Hikakusyou_JmpC'
++  ifOperation: (IS_GREATER_OR_EQUAL), (STATIC), 400000, (VARIABLE), 34
++    physicsImpulseX: 25000
++    ifOperation: (IS_GREATER_OR_EQUAL), (STATIC), -100000, (VARIABLE), 35
++      physicsImpulseY: 20000
++      endIf: 
++    endIf: 
++  ifOperation: (IS_LESSER_OR_EQUAL), (STATIC), 50000, (VARIABLE), 35
++    physicsImpulseY: 35000
++    endIf: 
+   sprite: s32'tnn404_27', 2
+   sprite: s32'tnn404_28', 2
++  spriteAddTime: 1, 2, 214
+   sprite: s32'tnn404_29', 3
++  spriteAddTime: 1, 2, 214
+   sprite: s32'tnn404_10', 2
++  spriteAddTime: 1, 2, 214
+   sprite: s32'tnn404_11', 2
+   characterSfx: s32'ARC_BTL_TNN_Hikakusyou_KckC'
+   sprite: s32'tnn404_12', 2
+@@ -5095,12 +5106,13 @@
+   sprite: s32'tnn404_18', 3
+   haltMomentum: 1
+   clearRegisteredUponCode: (FRAME_STEP)
+-  physicsImpulseX: 50000
++  physicsImpulseX: 55000
+   horizontalMomentum: 100
+   autoAirTurn: 1
+-  physicsImpulseY: 20000
++  physicsImpulseY: 35000
+   SkillFinishToDownLoop: 1
+   resetGravity: 
++  PushCollisionHeightLow: 268435455
+   sprite: s32'tnn404_19', 3
+   horizontalMomentum: 90
+   sprite: s32'tnn022_00', 3
+@@ -5339,7 +5351,7 @@
+     AtkIgnoreCaution: 1
+     enableVanish: 0
+     endUpon: 
+-  sprite: s32'tnn407_00', 4
++  sprite: s32'tnn407_00', 2
+   FaceReset: 530
+   sprite: s32'tnn407_01', 4
+   ForceRandomVoice: s16'vxxx211', 100, s16'vxxx212', 100, s16'', 0, s16'', 0

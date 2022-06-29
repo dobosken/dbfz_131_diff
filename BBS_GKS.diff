@@ -1,0 +1,182 @@
+--- 1.30/BBS_GKS.bbs	2022-06-29 16:26:18.000000000 +0200
++++ 1.31/BBS_GKS.bbs	2022-06-29 17:54:18.000000000 +0200
+@@ -3136,6 +3136,11 @@
+     AtkShakeCamera: s32'ShakeTate', 500, 1, 20, 0
+     jumpToStateInObject: (PARENT), s32'landing'
+     storeValue: (VARIABLE), 45, (STATIC), 1
++    blockstunAmount: 22
++    upon: (ON_ATTACK_HIT_PLAYER_GUARD)
++      hitStop: 21
++      cameraShake: s32'ShakeTate', 400, 0, 25, 10
++      endUpon: 
+     endIf: 
+   checkCurrentStateName: 23, s32'Downhook_C'
+   if: (VARIABLE), (Result)
+@@ -3155,6 +3160,11 @@
+     AtkShakeCamera: s32'ShakeTate', 500, 1, 20, 0
+     storeValue: (VARIABLE), 47, (STATIC), 1
+     storeValue: (VARIABLE), 45, (STATIC), 1
++    blockstunAmount: 19
++    upon: (ON_ATTACK_HIT_PLAYER_GUARD)
++      hitStop: 21
++      cameraShake: s32'ShakeTate', 400, 0, 25, 10
++      endUpon: 
+     endIf: 
+   checkCurrentStateName: 23, s32'AirDownhook_C'
+   if: (VARIABLE), (Result)
+@@ -3294,11 +3304,11 @@
+   upon: (IMMEDIATE)
+     callSubroutine: s32'Downhook_Init'
+     endUpon: 
+-  sprite: s32'gks404_00', 2
++  sprite: s32'gks404_00', 3
+   Hair: 6
+   HairReset: 4
+   PushCollisionHeightLow: 40000
+-  sprite: s32'gks404_01', 2
++  sprite: s32'gks404_01', 3
+   sprite: s32'gks404_02', 4
+   voiceLine: s16'vxxx201'
+   PrivateBankSE: 0, s32'ARC_BTL_GKS_DownHook_Dash', 100
+@@ -3705,6 +3715,8 @@
+     hitStop: 5
+     hitAirPushbackX: 25000
+     hitAirPushbackY: 35000
++    isAirUnblockable: 1
++    damage2: 4
+     endIf: 
+   checkCurrentStateName: 23, s32'Gekiretu_C'
+   if: (VARIABLE), (Result)
+@@ -3714,6 +3726,8 @@
+     hitAirPushbackY: 30000
+     AtkDamageEffect: 4, s32'cmn_hit_sp3'
+     AtkShakeCamera: s32'ShakeTate', 500, 1, 15, 0
++    isAirUnblockable: 1
++    damage2: 4
+     endIf: 
+   checkCurrentStateName: 23, s32'AirGekiretu_A'
+   if: (VARIABLE), (Result)
+@@ -3727,6 +3741,8 @@
+     hitStop: 5
+     hitAirPushbackX: 25000
+     hitAirPushbackY: 22000
++    isAirUnblockable: 1
++    damage2: 4
+     endIf: 
+   checkCurrentStateName: 23, s32'AirGekiretu_C'
+   if: (VARIABLE), (Result)
+@@ -3736,6 +3752,8 @@
+     hitAirPushbackY: 19000
+     AtkDamageEffect: 4, s32'cmn_hit_sp3'
+     AtkShakeCamera: s32'ShakeTate', 500, 1, 15, 0
++    isAirUnblockable: 1
++    damage2: 4
+     endIf: 
+   endSubroutine: 
+ 
+@@ -3879,6 +3897,7 @@
+   Hair: 5
+   sprite: s32'gks406_01', 2
+   sprite: s32'gks406_02', 2
++  headInvul: 1
+   voiceLine: s16'vxxx204'
+   sprite: s32'gks406_03', 2
+   PrivateBankSE: 0, s32'ARC_BTL_GKS_Gekiren_1st_Atk', 100
+@@ -3930,6 +3949,7 @@
+   sprite: s32'gks406_15', 1
+   resetGravity: 
+   sprite: s32'gks406_15', 3
++  headInvul: 0
+   recoveryState: 
+   sprite: s32'gks406_16', 5
+   sprite: s32'gks406_21', 5
+@@ -3949,6 +3969,7 @@
+   sprite: s32'gks406_01', 1
+   sprite: s32'gks406_02', 1
+   sprite: s32'gks406_03', 2
++  headInvul: 1
+   characterSfx: s32'ARC_BTL_GKS_Gekiren_1st_Atk'
+   sprite: s32'gks406_04', 2
+   sprite: s32'gks406_05', 2
+@@ -4016,6 +4037,7 @@
+   sprite: s32'gks406_15', 1
+   resetGravity: 
+   sprite: s32'gks406_15', 2
++  headInvul: 0
+   recoveryState: 
+   sprite: s32'gks406_16', 3
+   sprite: s32'gks406_21', 3
+@@ -4069,8 +4091,10 @@
+   sprite: s32'gks406_05', 2
+   Hair: 5
+   haltMomentum: 1
+-  sprite: s32'gks406_05', 2
++  sprite: s32'gks406_05', 1
+   PrivateBankSE: 0, s32'ARC_BTL_GKS_Gekiren_1st_Atk', 100
++  sprite: s32'gks406_05', 1
++  headInvul: 1
+   sprite: s32'gks406_06', 4
+   voiceLine: s16'vxxx204'
+   physicsImpulseX: 30000
+@@ -4115,6 +4139,7 @@
+   sprite: s32'gks406_15', 1
+   resetGravity: 
+   sprite: s32'gks406_15', 2
++  headInvul: 0
+   recoveryState: 
+   sprite: s32'gks406_16', 3
+   sprite: s32'gks406_21', 5
+@@ -4133,10 +4158,12 @@
+   HairReset: 4
+   haltMomentum: 1
+   characterSfx: s32'ARC_BTL_GKS_Gekiren_1st_Atk'
+-  sprite: s32'gks406_06', 4
++  sprite: s32'gks406_06', 1
+   physicsImpulseX: 35000
+   physicsImpulseY: 30000
+   setGravity: 1000
++  sprite: s32'gks406_06', 3
++  headInvul: 1
+   sprite: s32'gks406_07', 1
+   ForceRandomVoice: s16'vxxx203', 100, s16'', 0, s16'', 0, s16'', 0
+   createObject: s32'ex406Eff', (PLAYER)
+@@ -4197,6 +4224,7 @@
+   sprite: s32'gks406_15', 1
+   resetGravity: 
+   sprite: s32'gks406_15', 2
++  headInvul: 0
+   recoveryState: 
+   sprite: s32'gks406_16', 3
+   sprite: s32'gks406_21', 3
+@@ -4303,6 +4331,10 @@
+   triggerUponInObject: s32'Kamehameha_Core', (ON_HIT_OR_BLOCK)
+   deactivateObjectByName: s32'groundSmoke'
+   deactivateObjectByName: s32'kamehameha_shadow'
++  removeWhiffCancelOption: s32'Kamehameha_Naname'
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'gks400_14', 3
+   sprite: s32'gks400_15', 3
+   endLabel: 
+@@ -4492,6 +4524,10 @@
+   clearRegisteredUponCode: (BEAM_CLASH)
+   triggerUponInObject: s32'Kamehameha_Core', (ON_HIT_OR_BLOCK)
+   deactivateObjectByName: s32'kamehameha_shadow'
++  removeWhiffCancelOption: s32'AirKamehameha_Naname'
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'gks402_14', 3
+   sprite: s32'gks402_15', 3
+   endLabel: 
+@@ -4581,6 +4617,9 @@
+   clearRegisteredUponCode: (BEAM_CLASH)
+   triggerUponInObject: s32'AirKamehameha_Naname_Core', (ON_HIT_OR_BLOCK)
+   deactivateObjectByName: s32'VSLand_kamehameha_shadow'
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'gks403_14', 3
+   sprite: s32'gks403_15', 3
+   endLabel: 

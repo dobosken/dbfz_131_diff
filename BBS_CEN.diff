@@ -1,0 +1,71 @@
+--- 1.30/BBS_CEN.bbs	2022-06-29 16:26:11.000000000 +0200
++++ 1.31/BBS_CEN.bbs	2022-06-29 17:54:16.000000000 +0200
+@@ -2320,6 +2320,9 @@
+   sprite: s32'cen200_03', 3
+   hit: 
+   callSubroutine: s32'cmnRendaChain_Clear_Idling'
++  physicsImpulseX: 50000
++  horizontalMomentum: 65
++  EffectForLanding: 100, 1, 0
+   sprite: s32'cen200_04', 4
+   enableWhiffCancel: 1
+   recoveryState: 
+@@ -3486,6 +3489,8 @@
+   checkCurrentStateName: 23, s32'AirRollingClash_A'
+   if: (VARIABLE), (Result)
+     callSubroutine: s32'cmn_AirAtkHosei'
++    damage1: 40
++    AtkHoseiGuardBalance: 1000
+     groundHitEffect: (NORMAL_UPPER)
+     hitAirPushbackX: 10000
+     hitAirPushbackY: -80000
+@@ -3857,11 +3862,11 @@
+   upon: (IMMEDIATE)
+     callSubroutine: s32'RollingClash_Init'
+     endUpon: 
+-  sprite: s32'cen401_27', 3
++  sprite: s32'cen401_27', 2
+   Hair: 5
+   HairReset: 4
+   haltMomentum: 1
+-  sprite: s32'cen401_28', 3
++  sprite: s32'cen401_28', 2
+   sprite: s32'cen401_02', 3
+   sprite: s32'cen401_03', 4
+   voiceLine: s16'vxxx203'
+@@ -4065,10 +4070,12 @@
+   verticalMomentum: 0
+   sprite: s32'cen401_15', 2
+   EffectForLanding: 104, 1, 1
++  physicsImpulseX: 80000
++  horizontalMomentum: 65
+   sprite: s32'cen401_16', 2
+   cmnSfx: s32'ARC_BTL_CMN_Furi_FuriOroshi'
+-  sprite: s32'cen401_17', 3
+-  sprite: s32'cen401_18', 4
++  sprite: s32'cen401_17', 2
++  sprite: s32'cen401_18', 2
+   PushCollisionHeight: 350000
+   sprite: s32'cen401_19', 3
+   createObject: s32'cen401_AddEff', (PLAYER)
+@@ -5581,6 +5588,10 @@
+   triggerUponInObject: s32'Kamehameha_Core', (ON_HIT_OR_BLOCK)
+   deactivateObjectByName: s32'groundSmoke'
+   deactivateObjectByName: s32'kamehameha_shadow'
++  removeWhiffCancelOption: s32'Kamehameha_Naname'
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'cen403_10', 3
+   sprite: s32'cen403_11', 3
+   endLabel: 
+@@ -5759,6 +5770,9 @@
+   clearRegisteredUponCode: (BEAM_CLASH)
+   triggerUponInObject: s32'AirKamehameha_Naname_Core', (ON_HIT_OR_BLOCK)
+   deactivateObjectByName: s32'VSLand_kamehameha_shadow'
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'cen405_10', 3
+   sprite: s32'cen405_11', 3
+   endLabel: 

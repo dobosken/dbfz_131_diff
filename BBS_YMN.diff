@@ -1,0 +1,160 @@
+--- 1.30/BBS_YMN.bbs	2022-06-29 16:26:29.000000000 +0200
++++ 1.31/BBS_YMN.bbs	2022-06-29 17:54:22.000000000 +0200
+@@ -309,7 +309,7 @@
+     moveInput: (INPUT_BOOLEAN_OR)
+     moveInput: (INPUT_PRESS_KI)
+     moveInput: (INPUT_DISALLOW_DOWN)
+-    maxChainIntoSelf: 1
++    maxChainIntoSelf: 2
+     SkillEstTagCombo: 
+     endMove: 
+   addMove: s32'RFK_ushiro'
+@@ -318,7 +318,7 @@
+     isFollowupMove: 1
+     moveInput: (INPUT_ANY_BACK)
+     moveInput: (INPUT_PRESS_KI)
+-    maxChainIntoSelf: 1
++    maxChainIntoSelf: 2
+     SkillEstTagGuard: 
+     SkillEstTagNoCombo: 
+     endMove: 
+@@ -2532,8 +2532,6 @@
+     callSubroutine: s32'cmnNmlAtk5A_AtkInit'
+     callSubroutine: s32'cmnNmlAtk5A_Init'
+     addGatlingOption: s32'NmlAtk2D'
+-    removeGatlingOption: s32'NmlAtk5A'
+-    removeWhiffCancelOption: s32'NmlAtk5A'
+     endUpon: 
+   sprite: s32'ymn200_00', 1
+   Hair: 5
+@@ -2942,6 +2940,7 @@
+     hitAirPushbackY: 25000
+     AtkFrontDirection: 0
+     isAirUnblockable: 1
++    pushbackX: 50
+     damageSoundEffect: s32'ARC_BTL_CMN_Hit_Large-A'
+     if: (VARIABLE), (IsSparking)
+       enableJumpCancel: 1
+@@ -2986,6 +2985,9 @@
+     modifyPositionY: 240000
+     modifyPositionX: 160000
+     endApply: 
++  upon: (HIT_OR_GUARD_ANY)
++    addGatlingOption: s32'NmlAtkAir2C'
++    endUpon: 
+   sprite: s32'ymn232_06', 3
+   horizontalMomentum: 85
+   sprite: s32'ymn232_07', 2
+@@ -3305,9 +3307,15 @@
+     hitAirPushbackX: 30000
+     hitAirPushbackY: -50000
+     hitstunAmount: 20
+-    untechAmount: 26
++    untechAmount: 36
+     blockstunAmount: 15
+     guardType: (ANY)
++    enemyHitstopAddition: 0, 5, 5
++    addGatlingOption: s32'NmlAtk5C'
++    addGatlingOption: s32'NmlAtk2C'
++    addGatlingOption: s32'NmlAtk5D'
++    addGatlingOption: s32'NmlAtk2D'
++    SenkoInputSpecial: 12
+     if: (VARIABLE), (IsSparking)
+       enableJumpCancel: 1
+       addGatlingOption: s32'CmnFAirDash'
+@@ -3319,6 +3327,9 @@
+       haltMomentum: 1
+       jumpToLabel: s32'landing'
+       endUpon: 
++    upon: (ON_ATTACK_HIT_MAIN_PLAYER_DAMAGE)
++      horizontalMomentum: 100
++      endUpon: 
+     endUpon: 
+   sprite: s32'ymn263_00', 2
+   Hair: 6
+@@ -3569,6 +3580,7 @@
+     addWhiffCancelOption: s32'RFK_senpu_C'
+     addWhiffCancelOption: s32'RFK_mae'
+     addWhiffCancelOption: s32'RFK_ushiro'
++    addWhiffCancelOption: s32'Kamehameha'
+     endIf: 
+   recoveryState: 
+   StopBankSE: 2, 6
+@@ -3821,6 +3833,7 @@
+     addWhiffCancelOption: s32'RFK_senpu_C_Hasei'
+     addWhiffCancelOption: s32'RFK_mae'
+     addWhiffCancelOption: s32'RFK_ushiro'
++    addWhiffCancelOption: s32'Kamehameha'
+     endIf: 
+   recoveryState: 
+   StopBankSE: 2, 6
+@@ -3878,8 +3891,8 @@
+   sprite: s32'ymn400_00', 2
+   Hair: 6
+   HairReset: 4
+-  sprite: s32'ymn400_01', 2
+-  sprite: s32'ymn400_04', 2
++  sprite: s32'ymn400_01', 1
++  sprite: s32'ymn400_04', 1
+   createObject: s32'ymn_400_Smoke1', (PLAYER)
+   characterSfx: s32'ARC_BTL_YMN_RFK_Dash'
+   if: (VARIABLE), 57
+@@ -3890,7 +3903,7 @@
+     endElse: 
+   sprite: s32'ymn400_05', 2
+   createObject: s32'ymn400_shadow1', (PLAYER)
+-  physicsImpulseX: 40000
++  physicsImpulseX: 50000
+   sprite: s32'ymn400_08', 2
+   PrivateBankSE: 0, s32'ARC_BTL_YMN_RFK_Furi_x5', 100
+   sprite: s32'ymn400_09', 1
+@@ -4285,6 +4298,7 @@
+     addWhiffCancelOption: s32'RFK_senpu_A'
+     addWhiffCancelOption: s32'RFK_senpu_B'
+     addWhiffCancelOption: s32'RFK_senpu_C'
++    addWhiffCancelOption: s32'Kamehameha'
+     endIf: 
+   endSubroutine: 
+ 
+@@ -4722,6 +4736,7 @@
+       addWhiffCancelOption: s32'RFK_senpu_A'
+       addWhiffCancelOption: s32'RFK_senpu_B'
+       addWhiffCancelOption: s32'RFK_senpu_C'
++      addWhiffCancelOption: s32'Kamehameha'
+       endIf: 
+     endUpon: 
+   endSubroutine: 
+@@ -4739,7 +4754,10 @@
+   sprite: s32'ymn032_01', 3
+   sprite: s32'ymn032_02', 3
+   horizontalMomentum: 80
+-  voiceLine: s16'vxxx209'
++  checkLastStateName: s32'RFK_ushiro'
++  ifNot: (VARIABLE), (Result)
++    voiceLine: s16'vxxx209'
++    endIf: 
+   sprite: s32'ymn036_03', 2
+   sprite: s32'ymn036_02', 2
+   sprite: s32'ymn036_01', 2
+@@ -4777,7 +4795,10 @@
+   sprite: s32'ymn033_01', 3
+   physicsImpulseX: -45000
+   sprite: s32'ymn033_02', 3
+-  voiceLine: s16'vxxx210'
++  checkLastStateName: s32'RFK_ushiro'
++  ifNot: (VARIABLE), (Result)
++    voiceLine: s16'vxxx210'
++    endIf: 
+   sprite: s32'ymn033_00', 3
+   horizontalMomentum: 80
+   sprite: s32'ymn035_03', 3
+@@ -5918,6 +5939,9 @@
+   deactivateObjectByName: s32'groundSmoke'
+   StopBankSE: 16, 20
+   StopBankSE: 17, 20
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'ymn409_12', 3
+   sprite: s32'ymn409_13', 3
+   deactivateObjectByName: s32'kamehameha_shadow'

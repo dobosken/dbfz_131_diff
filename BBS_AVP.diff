@@ -1,0 +1,63 @@
+--- 1.30/BBS_AVP.bbs	2022-06-29 16:26:09.000000000 +0200
++++ 1.31/BBS_AVP.bbs	2022-06-29 17:54:15.000000000 +0200
+@@ -3230,7 +3230,7 @@
+   HairReset: 1
+   sprite: s32'avp231_09', 3
+   sprite: s32'avp231_10', 3
+-  sprite: s32'avp231_11', 3
++  sprite: s32'avp231_11', 2
+   endState: 
+ 
+ beginState: s32'NmlAtk6B'
+@@ -4439,11 +4439,15 @@
+       jumpToLabel: s32'brake'
+       endIf: 
+     endIf: 
+-  sprite: s32'avp400_09', 5
++  sprite: s32'avp400_09', 4
+   setNoCollision: 1
+   characterSfx: s32'ARC_BTL_AVP_Accldrv_SyouTei'
+   StopBankSE: 0, 30
++  sprite: s32'avp400_09', 1
++  enableWhiffCancel: 1
++  SenkoInputSpecial: 8
+   sprite: s32'avp400_10', 5
++  enableWhiffCancel: 0
+   faceOpponent: 
+   horizontalMomentum: 50
+   clearRegisteredUponCode: (FRAME_STEP)
+@@ -4782,11 +4786,15 @@
+       jumpToLabel: s32'brake'
+       endIf: 
+     endIf: 
+-  sprite: s32'avp400_09', 3
++  sprite: s32'avp400_09', 2
+   setNoCollision: 1
+   characterSfx: s32'ARC_BTL_AVP_Accldrv_SyouTei'
+   StopBankSE: 0, 30
++  sprite: s32'avp400_09', 1
++  enableWhiffCancel: 1
++  SenkoInputSpecial: 8
+   sprite: s32'avp400_10', 3
++  enableWhiffCancel: 0
+   faceOpponent: 
+   horizontalMomentum: 50
+   clearRegisteredUponCode: (FRAME_STEP)
+@@ -4882,7 +4890,7 @@
+   sprite: s32'avp403_02', 2
+   sprite: s32'avp403_03', 1
+   sprite: s32'avp403_04', 3
+-  physicsImpulseX: 80000
++  physicsImpulseX: 120000
+   sprite: s32'avp403_05', 3
+   HairReset: 4
+   hit: 
+@@ -5661,7 +5669,7 @@
+   sprite: s32'avp401_01', 2
+   characterSfx: s32'ARC_BTL_AVP_Accldrv_Keri'
+   sprite: s32'avp401_02', 2
+-  physicsImpulseX: 40000
++  physicsImpulseX: 60000
+   ForceRandomVoiceWeak: s16'vxxx202', 100, s16'', 0, s16'', 0, s16'', 0
+   sprite: s32'avp401_03', 2
+   physicsImpulseX: 20000

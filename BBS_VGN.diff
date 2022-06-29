@@ -1,0 +1,22 @@
+--- 1.30/BBS_VGN.bbs	2022-06-29 16:26:28.000000000 +0200
++++ 1.31/BBS_VGN.bbs	2022-06-29 17:54:22.000000000 +0200
+@@ -2587,7 +2587,7 @@
+   sprite: s32'vgn231_11', 4
+   HairReset: 1
+   sprite: s32'vgn231_12', 3
+-  sprite: s32'vgn231_13', 3
++  sprite: s32'vgn231_13', 2
+   endState: 
+ 
+ beginState: s32'NmlAtk6B'
+@@ -5470,8 +5470,8 @@
+   HairReset: 1
+   sprite: s32'vgn402_14', 3
+   sprite: s32'vgn402_15', 3
+-  sprite: s32'vgn402_16', 3
+-  sprite: s32'vgn402_17', 3
++  sprite: s32'vgn402_16', 2
++  sprite: s32'vgn402_17', 2
+   endState: 
+ 
+ beginState: s32'Ugokenai'

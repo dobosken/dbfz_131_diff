@@ -1,0 +1,124 @@
+--- 1.30/BBS_GBR.bbs	2022-06-29 16:26:14.000000000 +0200
++++ 1.31/BBS_GBR.bbs	2022-06-29 17:54:17.000000000 +0200
+@@ -2602,7 +2602,7 @@
+   Hair: 6
+   HairReset: 4
+   sprite: s32'gbr232_01', 3
+-  sprite: s32'gbr232_02', 7
++  sprite: s32'gbr232_02', 4
+   AttackVoice: 2, -1
+   sprite: s32'gbr232_03', 2
+   physicsImpulseX: 70000
+@@ -2674,7 +2674,6 @@
+       enableJumpCancel: 1
+       endIf: 
+     upon: (ON_ATTACK_COLLISION_MAIN_PLAYER)
+-      storeValue: (VARIABLE), 45, (STATIC), 1
+       enableSpecialCancel: 1
+       enableGatlings: 1
+       enableChange: 1
+@@ -2685,6 +2684,16 @@
+       clearRegisteredUponCode: (FRAME_STEP)
+       endUpon: 
+     upon: (ON_ATTACK_HIT_PLAYER_ARMOR)
++      enableSpecialCancel: 1
++      enableGatlings: 1
++      enableChange: 1
++      enableMemberChangeUltimate: 1
++      if: (VARIABLE), (IsSparking)
++        enableJumpCancel: 1
++        endIf: 
++      clearRegisteredUponCode: (FRAME_STEP)
++      endUpon: 
++    upon: (ON_ATTACK_HIT_MAIN_PLAYER_DAMAGE)
+       storeValue: (VARIABLE), 45, (STATIC), 1
+       enableSpecialCancel: 1
+       enableGatlings: 1
+@@ -3179,6 +3188,7 @@
+   HairReset: 1
+   sprite: s32'gbr400_01', 3
+   createObject: s32'sinkidan_start', 0
++  headInvul: 1
+   sprite: s32'gbr400_02', 3
+   sprite: s32'gbr400_03', 3
+   sprite: s32'gbr400_04', 3
+@@ -3230,6 +3240,7 @@
+     horizontalMomentum: 88
+     endIf: 
+   recoveryState: 
++  headInvul: 0
+   sprite: s32'gbr400_17', 2
+   deactivateObjectByName: s32'gbr_400_atk_eff01'
+   createObject: s32'gbr_400_end_eff01', 0
+@@ -3256,8 +3267,10 @@
+   Hair: 6
+   HairReset: 1
+   callSubroutine: s32'cmnSpecialAttackExInit'
+-  sprite: s32'gbr400_01', 2
++  headInvul: 1
++  sprite: s32'gbr400_01', 1
+   createObject: s32'sinkidan_start', 0
++  sprite: s32'gbr400_01', 1
+   sprite: s32'gbr400_02', 2
+   sprite: s32'gbr400_04', 2
+   HairReset: 4
+@@ -3330,6 +3343,7 @@
+     horizontalMomentum: 88
+     endIf: 
+   recoveryState: 
++  headInvul: 0
+   sprite: s32'gbr400_17', 2
+   deactivateObjectByName: s32'gbr_400_atk_eff01'
+   createObject: s32'gbr_400_end_eff01', 0
+@@ -3648,14 +3662,14 @@
+   enableSuperArmor: 1
+   PushCollisionHeightLow: -70000
+   PushCollisionMainPlayerOnly: 1
+-  moveToOffset: 32, 100, -600000, 150000, 7
++  moveToOffset: 32, 100, -800000, 300000, 7
+   sprite: s32'gbr022_02', 3
+   HairReset: 4
+   createParticle: s32'gbr_warp01', (CENTER)
+   PushCollisionMainPlayerOnly: 0
+   enableSuperArmor: 0
+   multiplyAlphaColor: 255
+-  moveToOffset: 32, 100, -600000, 150000, 1
++  moveToOffset: 32, 100, -800000, 300000, 1
+   haltMomentum: 1
+   physicsImpulseX: 5000
+   physicsImpulseY: 15000
+@@ -3674,10 +3688,10 @@
+   sprite: s32'gbr401_02', 2
+   characterSfx: s32'ARC_BTL_GBR_Syunkan_Bishi'
+   voiceLine: s16'vxxx200'
+-  sprite: s32'gbr401_03', 3
+-  sprite: s32'gbr401_04', 3
+-  sprite: s32'gbr401_05', 3
+-  sprite: s32'gbr401_03', 3
++  sprite: s32'gbr401_03', 2
++  sprite: s32'gbr401_04', 2
++  sprite: s32'gbr401_05', 2
++  sprite: s32'gbr401_03', 2
+   sprite: s32'gbr401_05', 7
+   createParticle: s32'gbr_warp01', (CENTER)
+   characterSfx: s32'ARC_BTL_GBR_Syunkan_TLP'
+@@ -4363,6 +4377,9 @@
+   deactivateObjectByName: s32'kamehameha_shadow'
+   StopBankSE: 16, 20
+   StopBankSE: 17, 20
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'gbr403_15', 3
+   sprite: s32'gbr403_16', 3
+   endLabel: 
+@@ -4530,6 +4547,9 @@
+   deactivateObjectByName: s32'kamehameha_shadow'
+   StopBankSE: 16, 20
+   StopBankSE: 17, 20
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'gbr403_15', 3
+   sprite: s32'gbr403_16', 3
+   enableSuperArmor: 0

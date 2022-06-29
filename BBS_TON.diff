@@ -1,0 +1,54 @@
+--- 1.30/BBS_TON.bbs	2022-06-29 16:26:27.000000000 +0200
++++ 1.31/BBS_TON.bbs	2022-06-29 17:54:21.000000000 +0200
+@@ -3665,10 +3665,10 @@
+   recoveryState: 
+   sprite: s32'ton204_09', 4
+   sprite: s32'ton204_10', 3
+-  sprite: s32'ton204_11', 3
+-  sprite: s32'ton204_12', 3
++  sprite: s32'ton204_11', 2
++  sprite: s32'ton204_12', 2
+   HairReset: 1
+-  sprite: s32'ton204_13', 3
++  sprite: s32'ton204_13', 2
+   endState: 
+ 
+ beginState: s32'NmlAtk2C'
+@@ -3684,10 +3684,10 @@
+         endIf: 
+       endUpon: 
+     endUpon: 
+-  sprite: s32'ton232_00', 4
++  sprite: s32'ton232_00', 3
+   FaceReset: 531
+   HairReset: 4
+-  sprite: s32'ton232_01', 4
++  sprite: s32'ton232_01', 3
+   AttackVoice: 2, -1
+   sprite: s32'ton232_02', 3
+   haltMomentum: 1
+@@ -4106,7 +4106,11 @@
+   beginLabel: s32'end'
+   sprite: s32'ton403_12', 3
+   sprite: s32'ton403_13', 3
+-  sprite: s32'ton403_14', 3
++  sprite: s32'ton403_14', 1
++  sprite: s32'ton403_14', 2
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'ton403_12', 3
+   sprite: s32'ton403_13', 3
+   sprite: s32'ton403_14', 3
+@@ -8743,6 +8747,11 @@
+ sprite: s32'ton431_49', 4
+ sprite: s32'ton431_50', 4
+ sprite: s32'ton431_51', 4
++sprite: s32'ton431_49', 4
++sprite: s32'ton431_50', 4
++sprite: s32'ton431_51', 4
++sprite: s32'ton431_49', 4
++sprite: s32'ton431_50', 4
+ sprite: s32'ton431_52', 3
+ sprite: s32'ton431_53', 3
+ sprite: s32'ton431_54', 3

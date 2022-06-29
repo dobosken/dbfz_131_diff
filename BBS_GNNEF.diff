@@ -1,0 +1,42 @@
+--- 1.30/BBS_GNNEF.bbs	2022-06-29 16:26:19.000000000 +0200
++++ 1.31/BBS_GNNEF.bbs	2022-06-29 17:54:18.000000000 +0200
+@@ -565,6 +565,7 @@
+   fadeColorRed: -66
+   fadeColorGreen: -66
+   fadeColorBlue: -66
++  superArmorKiBlastInvul: 1
+   sprite: s32'gdn200_01', 2
+   FaceReset: 31
+   HairReset: 1
+@@ -853,6 +854,7 @@
+     SoundOption_VoiceChannel: 2
+     voiceLine: s16'vrkn007'
+     endIf: 
++  AtkZReversal: 1
+   checkCurrentStateName: 3, s32'SpecialRush'
+   gotoIfTrue: s32'Atk', 2, 0
+   sprite: s32'rkn200_01', 3
+@@ -925,6 +927,7 @@
+   AtkZReversal: 0
+   recoveryState: 
+   HairReset: 0
++  AtkZReversal: 0
+   sprite: s32'rkn200_15', 2
+   if: (VARIABLE), (ObjectParam2)
+     exPointFReset: (CENTER), 0, 150000
+@@ -944,6 +947,7 @@
+   callSubroutine: s32'tokusentai_end'
+   deactivateObjectByName: s32'gnn_rkn_200_warp01'
+   deactivateObjectByName: s32'gnn_rkn_200_Shock_01'
++  AtkZReversal: 0
+   sprite: s32'rkn036_00', 4
+   sprite: s32'rkn036_01', 4
+   sprite: s32'rkn036_02', 4
+@@ -967,6 +971,7 @@
+   SoundOption_VoiceChannel: 2
+   RandomVoice: s16'vrkn000', 100, s16'vrkn001', 100, s16'vrkn002', 100, s16'vrkn003', 100
+   StopBankSE: 1, 20
++  AtkZReversal: 0
+   sprite: s32'rkn060_01', 3
+   sprite: s32'rkn060_02', 5
+   physicsImpulseX: -20000

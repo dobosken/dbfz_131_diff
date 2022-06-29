@@ -1,0 +1,83 @@
+--- 1.30/BBS_TRS.bbs	2022-06-29 16:26:27.000000000 +0200
++++ 1.31/BBS_TRS.bbs	2022-06-29 17:54:21.000000000 +0200
+@@ -2803,7 +2803,7 @@
+   sprite: s32'trs231_06', 2
+   callSubroutine: s32'cmnRendaChain_Clear_Idling'
+   EffectForDashStart: 104, 1, 0
+-  physicsImpulseX: 100000
++  physicsImpulseX: 140000
+   horizontalMomentum: 95
+   hit: 
+   StopBankSE: 0, 30
+@@ -3585,7 +3585,7 @@
+   sprite: s32'trs400_00', 2
+   Hair: 6
+   HairReset: 2
+-  sprite: s32'trs400_01', 3
++  sprite: s32'trs400_01', 2
+   sprite: s32'trs400_02', 3
+   voiceLine: s16'vxxx202'
+   createObject: s32'trs400_start', (PLAYER)
+@@ -3740,12 +3740,12 @@
+     endUpon: 
+   sprite: s32'trs400_00', 2
+   Hair: 6
+-  sprite: s32'trs400_01', 2
++  sprite: s32'trs400_01', 1
+   sprite: s32'trs400_02', 2
+   voiceLine: s16'vxxx202'
+   createObject: s32'trs400_start', (PLAYER)
+   characterSfx: s32'ARC_BTL_TRS_ShngSlsh_Battou'
+-  sprite: s32'trs400_03', 3
++  sprite: s32'trs400_03', 2
+   sprite: s32'trs400_06', 2
+   physicsImpulseX: 40000
+   characterSfx: s32'ARC_BTL_TRS_ShngSlsh_Jump'
+@@ -3916,7 +3916,7 @@
+   Hair: 6
+   HairReset: 2
+   callSubroutine: s32'cmnSpecialAttackExInit'
+-  sprite: s32'trs400_01', 2
++  sprite: s32'trs400_01', 1
+   sprite: s32'trs400_02', 2
+   voiceLine: s16'vxxx202'
+   createObject: s32'trs400_start', (PLAYER)
+@@ -4327,7 +4327,7 @@
+       endIf: 
+     endUpon: 
+   physicsImpulseX: 40000
+-  physicsImpulseY: 29000
++  physicsImpulseY: 26000
+   setGravity: 2400
+   sprite: s32'trs400_10', 2
+   sprite: s32'trs400_11', 2
+@@ -4913,8 +4913,8 @@
+   setCarriedMomentumPercentage: 60
+   sprite: s32'trs401_00', 2
+   FloorEffect: 5, 100
+-  physicsImpulseX: -11000
+-  physicsImpulseY: 50000
++  physicsImpulseX: -5000
++  physicsImpulseY: 55000
+   horizontalMomentum: 108
+   setGravity: 3000
+   sprite: s32'trs401_01', 2
+@@ -5085,7 +5085,7 @@
+   sprite: s32'trs410_11', 2
+   sprite: s32'trs410_02', 2
+   physicsImpulseX: -12000
+-  physicsImpulseY: 37000
++  physicsImpulseY: 7000
+   horizontalMomentum: 106
+   setGravity: 3000
+   storeValue: (VARIABLE), 3, (STATIC), 1
+@@ -5339,6 +5339,9 @@
+   triggerUponInObject: s32'Masenkou_core', (ON_HIT_OR_BLOCK)
+   deactivateObjectByName: s32'cmn_kamehameha_shadow'
+   deactivateObjectByName: s32'trs403_Smoke00'
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'trs403_09', 3
+   sprite: s32'trs403_10', 3
+   endLabel: 

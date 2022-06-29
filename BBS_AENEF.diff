@@ -1,0 +1,28 @@
+--- 1.30/BBS_AENEF.bbs	2022-06-29 16:26:08.000000000 +0200
++++ 1.31/BBS_AENEF.bbs	2022-06-29 17:54:15.000000000 +0200
+@@ -1091,12 +1091,16 @@
+   cmnSfx: s32'ARC_BTL_CMN_JetDashStop_Basa'
+   clearRegisteredUponCode: (FRAME_STEP)
+   sprite: s32'avn232_02', 2
++  spriteAddTime: 1, 2, 214
+   sprite: s32'avn232_03', 2
++  spriteAddTime: 1, 2, 214
+   characterSfx: s32'ARC_BTL_AEN_Call17_ArA_Keri'
+   SoundOption_VoiceChannel: 1
+   RandomVoice: s16'vavn012', 100, s16'vavn013', 100, s16'vavn018', 100, s16'', 0
+   sprite: s32'avn232_04', 3
++  spriteAddTime: 1, 2, 214
+   sprite: s32'avn232_05', 3
++  spriteAddTime: 1, 2, 214
+   sprite: s32'avn232_06', 1
+   createObject: s32'cmn_Windpressure_Tate', (CENTER)
+   applyTo: (PREVIOUS)
+@@ -3255,7 +3259,7 @@
+       StopBankSE: 0, 20
+       endUpon: 
+     endUpon: 
+-  sprite: s32'null', 4
++  sprite: s32'null', 2
+   linkParticle: s32'aen_Kienzan_start'
+   PrivateBankSE: 0, s32'ARC_BTL_AEN_Kienzan_Chrg', 100
+   setObjectSize: 750

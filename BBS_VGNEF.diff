@@ -1,0 +1,11 @@
+--- 1.30/BBS_VGNEF.bbs	2022-06-29 16:26:28.000000000 +0200
++++ 1.31/BBS_VGNEF.bbs	2022-06-29 17:54:22.000000000 +0200
+@@ -351,7 +351,7 @@
+     callSubroutine: s32'cmnAtkLevel_2_AtkInit'
+     callSubroutine: s32'cmnAir5DKidan_AtkInit'
+     callSubroutine: s32'cmnKidan_Init'
+-    damage1: 400
++    damage1: 300
+     hitstunAmount: 20
+     hitAirPushbackX: 45000
+     hitAirPushbackY: -8000

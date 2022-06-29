@@ -1,0 +1,157 @@
+--- 1.30/BBS_VGS.bbs	2022-06-29 16:26:28.000000000 +0200
++++ 1.31/BBS_VGS.bbs	2022-06-29 17:54:22.000000000 +0200
+@@ -2323,10 +2323,10 @@
+     callSubroutine: s32'cmnRendaChain_Clear_Idling'
+     horizontalMomentum: 50
+     hit: 
+-    sprite: s32'vgs202_06', 3
++    sprite: s32'vgs202_06', 2
+     recoveryState: 
+-    sprite: s32'vgs202_07', 3
+-    sprite: s32'vgs202_08', 3
++    sprite: s32'vgs202_07', 2
++    sprite: s32'vgs202_08', 2
+     sprite: s32'vgs202_13', 3
+     sprite: s32'vgs202_14', 3
+     sprite: s32'vgs202_15', 3
+@@ -2462,7 +2462,7 @@
+     sprite: s32'vgs204_13', 2
+     sprite: s32'vgs204_14', 3
+     sprite: s32'vgs204_15', 3
+-    sprite: s32'vgs204_16', 3
++    sprite: s32'vgs204_16', 2
+     endState: 
+   beginState: s32'NmlAtk2B'
+     upon: (IMMEDIATE)
+@@ -2494,7 +2494,7 @@
+     sprite: s32'vgs231_10', 4
+     sprite: s32'vgs231_11', 4
+     sprite: s32'vgs231_12', 3
+-    sprite: s32'vgs231_13', 3
++    sprite: s32'vgs231_13', 2
+     endState: 
+   beginState: s32'NmlAtk6B'
+     upon: (IMMEDIATE)
+@@ -2566,7 +2566,7 @@
+     AttackVoice: 2, -1
+     sprite: s32'vgs203_05', 3
+     sprite: s32'vgs203_06', 1
+-    physicsImpulseX: 40000
++    physicsImpulseX: 60000
+     cmnSfx: s32'ARC_BTL_CMN_Furi_YokoKeri'
+     sprite: s32'vgs203_07', 1
+     sprite: s32'vgs203_08', 1
+@@ -2850,13 +2850,13 @@
+     endLabel: 
+     gotoLabel: s32'odd_end'
+     beginLabel: s32'odd_end'
+-    sprite: s32'vgs205_07', 4
+-    sprite: s32'vgs205_08', 3
++    sprite: s32'vgs205_07', 3
++    sprite: s32'vgs205_08', 2
+     endLabel: 
+     exitState: 
+     beginLabel: s32'even_end'
+-    sprite: s32'vgs205_14', 4
+-    sprite: s32'vgs205_15', 3
++    sprite: s32'vgs205_14', 3
++    sprite: s32'vgs205_15', 2
+     endState: 
+   beginState: s32'NmlAtkAir5A'
+     upon: (IMMEDIATE)
+@@ -3282,7 +3282,7 @@
+     HairReset: 4
+     createObject: s32'VGS_400Eff', (PLAYER)
+     attackLevel: 3
+-    damage1: 500
++    damage1: 800
+     groundHitEffect: (AIR_FACE_UP)
+     airHitEffect: (AIR_FACE_UP)
+     hitAirPushbackX: 45000
+@@ -3319,12 +3319,12 @@
+     sprite: s32'vgs400_06', 2
+     sprite: s32'vgs400_07', 2
+     horizontalMomentum: 70
+-    sprite: s32'vgs400_18', 3
++    sprite: s32'vgs400_18', 2
+     triggerUponInObject: s32'VGS_400Eff', (ON_HIT_OR_BLOCK)
+     recoveryState: 
+-    sprite: s32'vgs400_19', 3
++    sprite: s32'vgs400_19', 2
+     setNoCollision: 1
+-    sprite: s32'vgs400_20', 3
++    sprite: s32'vgs400_20', 1
+     sprite: s32'vgs022_02', 3
+     callSubroutine: s32'cmnRendaChain_Clear_Idling'
+     resetGravity: 
+@@ -3360,8 +3360,9 @@
+               groundHitEffect: 27
+               airHitEffect: 27
+               hitAirPushbackX: 0
+-              hitAirPushbackY: 45000
+-              untechAmount: 60
++              hitAirPushbackY: 50000
++              untechAmount: 70
++              Unknown778: 1500
+               endIf: 
+             endIf: 
+           endIf: 
+@@ -3555,7 +3556,7 @@
+     HairReset: 4
+     createObject: s32'VGS_400EffAir', (PLAYER)
+     attackLevel: 3
+-    damage1: 500
++    damage1: 800
+     groundHitEffect: (AIR_FACE_UP)
+     airHitEffect: (AIR_FACE_UP)
+     hitAirPushbackX: 45000
+@@ -3628,8 +3629,9 @@
+               groundHitEffect: 27
+               airHitEffect: 27
+               hitAirPushbackX: 0
+-              hitAirPushbackY: 45000
+-              untechAmount: 60
++              hitAirPushbackY: 50000
++              untechAmount: 70
++              Unknown778: 1500
+               endIf: 
+             endIf: 
+           endIf: 
+@@ -4092,7 +4094,7 @@
+     sprite: s32'vgs402_01', 2
+     sprite: s32'vgs402_02', 2
+     characterSfx: s32'ARC_BTL_VGS_InterceptKick'
+-    sprite: s32'vgs402_03', 6
++    sprite: s32'vgs402_03', 1
+     RandomVoice: s16'vxxx206', 100, s16'vxxx207', 100, s16'', 0, s16'', 0
+     sprite: s32'vgs402_04', 2
+     sprite: s32'vgs402_05', 2
+@@ -4512,11 +4514,11 @@
+     HairReset: 4
+     createObject: s32'Multikidan_start', 0
+     haltMomentum: 1
+-    sprite: s32'vgs205_01', 3
++    sprite: s32'vgs205_01', 2
+     PrivateBankSE: 0, s32'ARC_BTL_VGS_RnzkEnrgydn_Chrg', 100
+     ForceRandomVoice: s16'vxxx208', 100, s16'', 0, s16'', 0, s16'', 0
+     sprite: s32'vgs205_02', 2
+-    sprite: s32'vgs205_03', 2
++    sprite: s32'vgs205_03', 1
+     endLabel: 
+     PrivateBankSE: 1, s32'ARC_BTL_VGS_RnzkEnrgydn_Shts', 100
+     beginLabel: s32'loop'
+@@ -4608,12 +4610,12 @@
+     PushSpeedX: 
+     PushSpeedY: 
+     haltMomentum: 1
+-    sprite: s32'vgs265_01', 2
++    sprite: s32'vgs265_01', 1
+     sprite: s32'vgs265_02', 2
+     PrivateBankSE: 0, s32'ARC_BTL_VGS_RnzkEnrgydn_Chrg', 100
+     LandingAutoAction: 0
+     landingRecovery: 6, 1
+-    sprite: s32'vgs265_03', 2
++    sprite: s32'vgs265_03', 1
+     ForceRandomVoice: s16'vxxx210', 100, s16'vxxx211', 100, s16'', 0, s16'', 0
+     sprite: s32'vgs265_04', 2
+     PopSpeedX: 

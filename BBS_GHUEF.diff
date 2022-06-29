@@ -1,0 +1,13 @@
+--- 1.30/BBS_GHUEF.bbs	2022-06-29 16:26:16.000000000 +0200
++++ 1.31/BBS_GHUEF.bbs	2022-06-29 17:54:18.000000000 +0200
+@@ -205,8 +205,8 @@
+   setDepth: -90000
+   sprite: s32'null', 2
+   cmnSfx: s32'ARC_BTL_CMN_kidan_Chrg'
+-  sprite: s32'null', 3
+-  sprite: s32'null', 2
++  sprite: s32'null', 1
++  sprite: s32'null', 1
+   endLabel: 
+   endState: 
+ 

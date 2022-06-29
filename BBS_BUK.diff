@@ -1,0 +1,57 @@
+--- 1.30/BBS_BUK.bbs	2022-06-29 16:26:10.000000000 +0200
++++ 1.31/BBS_BUK.bbs	2022-06-29 17:54:16.000000000 +0200
+@@ -2651,6 +2651,8 @@
+     whiffCancelOptionBufferTime: s32'NmlAtk2D_Chain', 8
+     addGatlingOption: s32'NmlAtk2D_Chain'
+     addWhiffCancelOption: s32'NmlAtk2D_Chain'
++    whiffCancelOptionBufferTime: s32'NmlAtk5B', 8
++    addGatlingOption: s32'NmlAtk5B'
+     endUpon: 
+   sprite: s32'buk205_00', 3
+   HairReset: 4
+@@ -2679,6 +2681,7 @@
+     callSubroutine: s32'cmnNmlAtk2D_Init'
+     PushCollisionHeightLow: 40000
+     SkillFinishToDownLoop: 1
++    addGatlingOption: s32'NmlAtkAir5B'
+     jumpToStateInObject: (PARENT), s32'landing'
+     endUpon: 
+   sprite: s32'buk233_00', 1
+@@ -3009,6 +3012,7 @@
+ beginState: s32'NmlAtkAir5D'
+   upon: (IMMEDIATE)
+     callSubroutine: s32'cmnNmlAtkAir5D_Init'
++    addGatlingOption: s32'NmlAtkAir5B'
+     endUpon: 
+   sprite: s32'buk265_00', 1
+   HairReset: 4
+@@ -3728,8 +3732,8 @@
+   sprite: s32'buk401_00', 3
+   FaceReset: 503
+   HairReset: 0
+-  sprite: s32'buk401_01', 3
+   headInvul: 1
++  sprite: s32'buk401_01', 3
+   sprite: s32'buk401_02', 2
+   voiceLine: s16'vxxx203'
+   sprite: s32'buk401_03', 2
+@@ -3777,8 +3781,8 @@
+   sprite: s32'buk401_00', 3
+   FaceReset: 503
+   HairReset: 0
+-  sprite: s32'buk401_01', 3
+   headInvul: 1
++  sprite: s32'buk401_01', 3
+   sprite: s32'buk401_02', 3
+   voiceLine: s16'vxxx203'
+   sprite: s32'buk401_03', 3
+@@ -4485,6 +4489,9 @@
+   triggerUponInObject: s32'AirKamehameha_Core', (ON_HIT_OR_BLOCK)
+   deactivateObjectByName: s32'cmn_kamehameha_shadow'
+   deactivateObjectByName: s32'cmn_GroundSmoke'
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'buk403_11', 3
+   sprite: s32'buk403_12', 3
+   endLabel: 

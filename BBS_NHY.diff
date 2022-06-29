@@ -1,0 +1,64 @@
+--- 1.30/BBS_NHY.bbs	2022-06-29 16:26:24.000000000 +0200
++++ 1.31/BBS_NHY.bbs	2022-06-29 17:54:20.000000000 +0200
+@@ -2156,7 +2156,12 @@
+   gotoLabel: s32'downloop'
+   beginLabel: s32'landing'
+   sprite: s32'nhy010_00', 3
+-  jumpToState: s32'BBkamehameha'
++  if: (VARIABLE), (DmgAtkAngle)
++    jumpToState: s32'GodPunisher'
++    endIf: 
++  else: 
++    jumpToState: s32'BBkamehameha'
++    endIf: 
+   endLabel: 
+   endState: 
+ 
+@@ -3757,8 +3762,8 @@
+   callSubroutine: s32'cmnRendaChain_Clear_Idling'
+   sprite: s32'nhy260_04', 2
+   sprite: s32'nhy260_04', 2
+-  recoveryState: 
+   sprite: s32'nhy260_05', 4
++  recoveryState: 
+   sprite: s32'nhy260_06', 4
+   sprite: s32'nhy260_07', 3
+   endState: 
+@@ -7749,6 +7754,9 @@
+     endIf: 
+   StopBankSE: 16, 20
+   StopBankSE: 17, 20
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'nhy205_13', 3
+   AttackOff: 
+   sprite: s32'nhy205_14', 4
+@@ -7871,6 +7879,9 @@
+     endIf: 
+   StopBankSE: 16, 20
+   StopBankSE: 17, 20
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'nhy265_13', 3
+   AttackOff: 
+   sprite: s32'nhy265_14', 3
+@@ -8002,6 +8013,9 @@
+     endIf: 
+   StopBankSE: 16, 20
+   StopBankSE: 17, 20
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+   sprite: s32'nhy267_13', 3
+   AttackOff: 
+   sprite: s32'nhy267_14', 3
+@@ -8494,6 +8508,7 @@
+ 
+ beginState: s32'GodPunisher'
+   upon: (IMMEDIATE)
++    PlayerActionInitializeByCategory: 20, 1
+     callSubroutine: s32'cmnAtkTemplNageDagekiHissori'
+     jumpToStateOnHit: s32'GodPunisher_Exe'
+     callSubroutine: s32'cmn_UltimateHosei'

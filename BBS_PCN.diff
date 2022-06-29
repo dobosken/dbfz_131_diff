@@ -1,0 +1,51 @@
+--- 1.30/BBS_PCN.bbs	2022-06-29 16:26:25.000000000 +0200
++++ 1.31/BBS_PCN.bbs	2022-06-29 17:54:21.000000000 +0200
+@@ -2429,6 +2429,7 @@
+   upon: (IMMEDIATE)
+     callSubroutine: s32'cmnNmlAtk5A3rd_AtkInit'
+     callSubroutine: s32'cmnNmlAtk5A3rd_Init'
++    pushbackX: 200
+     upon: 49
+       CheckSignalName: s32'CameraCombo_5A3rd'
+       if: (VARIABLE), (Result)
+@@ -2543,6 +2544,7 @@
+   AttackVoice: 1, -1
+   physicsImpulseX: 50000
+   horizontalMomentum: 90
++  EffectForLanding: 100, 1, 0
+   sprite: s32'pcn231_02', 3
+   cmnSfx: s32'ARC_BTL_CMN_Furi_SyagamiKeri'
+   sprite: s32'pcn231_03', 2
+@@ -3484,6 +3486,7 @@
+   sprite: s32'pcn402_01', 1
+   sprite: s32'pcn402_02', 1
+   sprite: s32'pcn402_03', 1
++  headInvul: 1
+   characterSfx: s32'ARC_BTL_PCN_Madengeki_Basa'
+   sprite: s32'pcn402_03', 1
+   sprite: s32'pcn402_04', 1
+@@ -3505,6 +3508,7 @@
+   if: (VARIABLE), (IsSparking)
+     enableJumpCancel: 1
+     endIf: 
++  headInvul: 0
+   sprite: s32'pcn402_11', 3
+   sprite: s32'pcn402_12', 3
+   recoveryState: 
+@@ -3598,6 +3602,7 @@
+     hitAirPushbackX: 70000
+     hitAirPushbackY: 20000
+     AtkFuttobiFinish: 1
++    enableJumpCancel: 1
+     addGatlingOption: s32'NmlAtkAir2C'
+     addGatlingOption: s32'NmlAtkAir5D'
+     if: (VARIABLE), (IsSparking)
+@@ -4259,7 +4264,7 @@
+   endLabel: 
+   gotoIfTrue: s32'atemi', 2, 47
+   sprite: s32'pcn400_02', 1
+-  sprite: s32'pcn400_03', 15
++  sprite: s32'pcn400_03', 10
+   beginLabel: s32'atemi'
+   sprite: s32'null', 1
+   clearRegisteredUponCode: 43

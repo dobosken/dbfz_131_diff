@@ -1,0 +1,11 @@
+--- 1.30/BBS_ZMBEF.bbs	2022-06-29 16:26:29.000000000 +0200
++++ 1.31/BBS_ZMBEF.bbs	2022-06-29 17:54:23.000000000 +0200
+@@ -598,7 +598,7 @@
+   hitAirPushbackX: 15000
+   hitAirPushbackY: 20000
+   blockstunAmount: 10
+-  enemyHitstopAddition: 0, 5, 5
++  enemyHitstopAddition: 0, 15, 15
+   untechAmount: 30
+   AtkHoseiTadan: 1
+   groundHitEffect: (AIR_FACE_UP)

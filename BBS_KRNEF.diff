@@ -1,0 +1,37 @@
+--- 1.30/BBS_KRNEF.bbs	2022-06-29 16:26:21.000000000 +0200
++++ 1.31/BBS_KRNEF.bbs	2022-06-29 17:54:19.000000000 +0200
+@@ -793,11 +793,12 @@
+     ScreenCollision: 1
+     PushCollisionWidth: 155000
+     PushCollisionHeight: 220000
+-    setNoCollision: 1
+     SetActionTimeMax: 60
+     LinkModelSelfTeam: s32'KRN', '0x0000000000000000000000000000000000000000000000000000000000000000'
+-    setNoCollision: 1
+     MutekiForce: 0
++    ScreenAdditionalWidth: -1
++    ignorePushback: 1
++    setNoCollision: 0
+     KowareAssari: 1
+     initializeDestroy: 
+     numberOfHits: 1
+@@ -821,7 +822,7 @@
+   sprite: s32'krn400_20', 2
+   sprite: s32'krn035_04', 3
+   EffectForDashStart: 100, 1, 1
+-  physicsImpulseX: 29000
++  physicsImpulseX: 39000
+   setAcceleration: 500
+   sprite: s32'krn032_00', 3
+   FloorEffect: 3, 100
+@@ -846,10 +847,7 @@
+     ScreenCollision: 1
+     PushCollisionWidth: 155000
+     PushCollisionHeight: 220000
+-    setNoCollision: 1
+     SetActionTimeMax: 60
+-    setNoCollision: 1
+-    PushFix: 1
+     endUpon: 
+   sprite: s32'null', 10
+   endState: 

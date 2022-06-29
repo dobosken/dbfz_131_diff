@@ -1,0 +1,64 @@
+--- 1.30/BBS_NPN.bbs	2022-06-29 16:26:24.000000000 +0200
++++ 1.31/BBS_NPN.bbs	2022-06-29 17:54:20.000000000 +0200
+@@ -2824,12 +2824,12 @@
+   sprite: s32'npn260_02', 1
+   AttackVoice: 0, -1
+   CommonSetSE: s32'FuriShort', 0, 100
+-  sprite: s32'npn260_03', 3
++  sprite: s32'npn260_03', 6
+   hit: 
+   callSubroutine: s32'cmnRendaChain_Clear_Idling'
+-  sprite: s32'npn260_04', 3
++  sprite: s32'npn260_04', 1
+   recoveryState: 
+-  sprite: s32'npn260_05', 3
++  sprite: s32'npn260_05', 2
+   sprite: s32'npn260_06', 3
+   sprite: s32'npn260_07', 3
+   exitState: 
+@@ -3386,6 +3386,11 @@
+     groundBounceCount: 1
+     groundBounceYVelocityPercent: 100
+     groundBounceYVelocity: 20000
++    blockstunAmount: 22
++    upon: (ON_ATTACK_HIT_PLAYER_GUARD)
++      hitStop: 21
++      cameraShake: s32'ShakeTate', 400, 0, 25, 10
++      endUpon: 
+     endIf: 
+   checkCurrentStateName: 23, s32'ArmBreak_B'
+   if: (VARIABLE), (Result)
+@@ -3965,10 +3970,10 @@
+   HairReset: 4
+   sprite: s32'npn402_01', 1
+   sprite: s32'npn402_02', 2
+-  sprite: s32'npn402_03', 2
++  sprite: s32'npn402_03', 1
+   RandomVoice: s16'vxxx210', 100, s16'vxxx211', 100, s16'', 0, s16'', 0
+   characterSfx: s32'ARC_BTL_NPN_Pi_Basa'
+-  sprite: s32'npn402_04', 2
++  sprite: s32'npn402_04', 1
+   sprite: s32'npn402_06', 2
+   createObject: s32'npn_402Eff_finger', 0
+   characterSfx: s32'ARC_BTL_NPN_Pi_Fire'
+@@ -4007,17 +4012,17 @@
+     AtkIgnoreCaution: 1
+     SkillFinishToDownLoop: 1
+     endUpon: 
+-  sprite: s32'npn403_00', 2
++  sprite: s32'npn403_00', 1
+   Hair: 6
+   HairReset: 4
+   haltMomentum: 1
+   sprite: s32'npn403_01', 1
+   sprite: s32'npn403_01', 1
+-  characterSfx: s32'ARC_BTL_NPN_Pi_Basa'
+   sprite: s32'npn403_02', 1
++  characterSfx: s32'ARC_BTL_NPN_Pi_Basa'
+   landingRecovery: 3, 1
+   RandomVoice: s16'vxxx210', 100, s16'vxxx211', 100, s16'', 0, s16'', 0
+-  sprite: s32'npn403_03', 2
++  sprite: s32'npn403_03', 1
+   sprite: s32'npn403_06', 2
+   createObject: s32'npn_403Eff_finger', 0
+   characterSfx: s32'ARC_BTL_NPN_Pi_Fire'

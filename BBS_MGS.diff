@@ -1,0 +1,119 @@
+--- 1.30/BBS_MGS.bbs	2022-06-29 16:26:22.000000000 +0200
++++ 1.31/BBS_MGS.bbs	2022-06-29 17:54:20.000000000 +0200
+@@ -3967,14 +3967,20 @@
+   removeLandingRecovery: 
+   sprite: s32'mgs208_18', 2
+   sprite: s32'mgs208_19', 2
+-  sprite: s32'mgs208_17', 4
+-  sprite: s32'mgs208_18', 4
+-  sprite: s32'mgs208_19', 4
+-  sprite: s32'mgs208_20', 5
+-  sprite: s32'mgs208_21', 4
+-  sprite: s32'mgs208_22', 4
+-  sprite: s32'mgs208_23', 3
+-  addPositionX: -40000
++  sprite: s32'mgs208_17', 2
++  spriteAddTime: 4, 2, 214
++  sprite: s32'mgs208_18', 2
++  spriteAddTime: 4, 2, 214
++  sprite: s32'mgs208_19', 2
++  spriteAddTime: 4, 2, 214
++  sprite: s32'mgs208_20', 2
++  spriteAddTime: 5, 2, 214
++  sprite: s32'mgs208_21', 2
++  spriteAddTime: 4, 2, 214
++  sprite: s32'mgs208_22', 2
++  spriteAddTime: 4, 2, 214
++  sprite: s32'mgs208_23', 1
++  spriteAddTime: 3, 2, 214
+   endState: 
+ 
+ beginState: s32'NmlAtkAir5A'
+@@ -5262,7 +5268,7 @@
+   sprite: s32'mgs407_05', 3
+   hit: 
+   createObject: s32'MGS407_atk01_Eff', (CENTER)
+-  physicsImpulseX: 150000
++  physicsImpulseX: 250000
+   horizontalMomentum: 70
+   jumpToStateInObject: (PARENT), s32'landing'
+   sprite: s32'mgs407_06', 3
+@@ -5364,7 +5370,7 @@
+   sprite: s32'mgs407_05', 3
+   hit: 
+   createObject: s32'MGS407_atk01_Eff', (CENTER)
+-  physicsImpulseX: 150000
++  physicsImpulseX: 250000
+   horizontalMomentum: 70
+   jumpToStateInObject: (PARENT), s32'landing'
+   sprite: s32'mgs407_06', 3
+@@ -6197,8 +6203,8 @@
+ 
+ beginState: s32'AirKankaku_A'
+   upon: (IMMEDIATE)
+-    callSubroutine: s32'Hasei_A_Init'
+     storeValue: (VARIABLE), 3, (STATIC), 0
++    callSubroutine: s32'Hasei_A_Init'
+     endUpon: 
+   sprite: s32'mgs401_38', 3
+   haltMomentum: 1
+@@ -7130,6 +7136,9 @@
+   beginLabel: s32'end2'
+   sprite: s32'mgs405_15', 4
+   resetGravity: 
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+   sprite: s32'mgs405_16', 4
+   sprite: s32'mgs405_17', 4
+   sprite: s32'mgs405_18', 3
+@@ -7232,6 +7241,9 @@
+   beginLabel: s32'ura_end2'
+   sprite: s32'mgs405_29', 4
+   resetGravity: 
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+   sprite: s32'mgs405_30', 4
+   sprite: s32'mgs405_31', 4
+   sprite: s32'mgs405_32', 3
+@@ -7365,6 +7377,9 @@
+   beginLabel: s32'end2'
+   sprite: s32'mgs405_15', 4
+   resetGravity: 
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+   sprite: s32'mgs405_16', 4
+   sprite: s32'mgs405_17', 4
+   sprite: s32'mgs405_18', 3
+@@ -7491,6 +7506,9 @@
+   beginLabel: s32'end2'
+   sprite: s32'mgs405_15', 4
+   resetGravity: 
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+   sprite: s32'mgs405_16', 4
+   sprite: s32'mgs405_17', 4
+   sprite: s32'mgs405_18', 3
+@@ -7626,6 +7644,9 @@
+   beginLabel: s32'ura_end2'
+   sprite: s32'mgs405_29', 4
+   resetGravity: 
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+   sprite: s32'mgs405_30', 4
+   sprite: s32'mgs405_31', 4
+   sprite: s32'mgs405_32', 3
+@@ -7772,6 +7793,9 @@
+   beginLabel: s32'ura_end2'
+   sprite: s32'mgs405_29', 4
+   resetGravity: 
++  enableWhiffCancel: 1
++  addWhiffCancelOption: s32'CmnActHomingDash'
++  whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+   sprite: s32'mgs405_30', 4
+   sprite: s32'mgs405_31', 4
+   sprite: s32'mgs405_32', 3

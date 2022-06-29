@@ -1,0 +1,117 @@
+--- 1.30/BBS_HTN.bbs	2022-06-29 16:26:19.000000000 +0200
++++ 1.31/BBS_HTN.bbs	2022-06-29 17:54:19.000000000 +0200
+@@ -2236,9 +2236,9 @@
+   recoveryState: 
+   sprite: s32'htn200_04', 2
+   enableWhiffCancel: 1
+-  sprite: s32'htn200_05', 3
+-  sprite: s32'htn200_06', 3
+-  sprite: s32'htn200_07', 3
++  sprite: s32'htn200_05', 2
++  sprite: s32'htn200_06', 2
++  sprite: s32'htn200_07', 2
+   enableWhiffCancel: 0
+   endState: 
+ 
+@@ -2680,9 +2680,9 @@
+     endUpon: 
+   sprite: s32'htn204_00', 1
+   Hair: 5
+-  sprite: s32'htn204_01', 2
+-  sprite: s32'htn204_02', 3
+-  sprite: s32'htn204_03', 3
++  sprite: s32'htn204_01', 1
++  sprite: s32'htn204_02', 2
++  sprite: s32'htn204_03', 2
+   AttackVoice: 2, 255
+   sprite: s32'htn204_03', 1
+   callSubroutine: s32'tokitobashi_warp'
+@@ -3248,13 +3248,13 @@
+   sprite: s32'htn400_04', 5
+   sprite: s32'htn400_05', 5
+   beginLabel: s32'end'
+-  sprite: s32'htn400_06', 4
++  sprite: s32'htn400_06', 3
+   clearRegisteredUponCode: (FRAME_STEP)
+   enableWhiffCancel: 0
+-  sprite: s32'htn400_07', 4
+-  sprite: s32'htn400_08', 4
+-  sprite: s32'htn400_09', 3
+-  sprite: s32'htn400_10', 3
++  sprite: s32'htn400_07', 3
++  sprite: s32'htn400_08', 3
++  sprite: s32'htn400_09', 2
++  sprite: s32'htn400_10', 2
+   endState: 
+ 
+ beginState: s32'KyushonoMikiwame_B'
+@@ -3302,19 +3302,19 @@
+   sprite: s32'htn400_04', 5
+   sprite: s32'htn400_05', 5
+   beginLabel: s32'end'
+-  sprite: s32'htn400_06', 4
++  sprite: s32'htn400_06', 3
+   clearRegisteredUponCode: (FRAME_STEP)
+   enableWhiffCancel: 0
+   if: (VARIABLE), 46
+     deactivateObjectByName: s32'htn_400_aura01'
+     createParticle: s32'htn400_eff01_end', (CENTER)
+     endIf: 
+-  sprite: s32'htn400_07', 4
+-  sprite: s32'htn400_08', 4
++  sprite: s32'htn400_07', 3
++  sprite: s32'htn400_08', 3
+   enableSuperArmor: 0
+   setNoCollision: 1
+-  sprite: s32'htn400_09', 3
+-  sprite: s32'htn400_10', 3
++  sprite: s32'htn400_09', 2
++  sprite: s32'htn400_10', 2
+   endState: 
+ 
+ beginState: s32'KyushonoMikiwame_C'
+@@ -3367,12 +3367,12 @@
+   setNoCollision: 0
+   enableSuperArmor: 1
+   superArmorGrabInvul: 0
+-  sprite: s32'htn400_07', 3
+-  sprite: s32'htn400_08', 3
++  sprite: s32'htn400_07', 1
++  sprite: s32'htn400_08', 1
+   enableSuperArmor: 0
+   setNoCollision: 1
+-  sprite: s32'htn400_09', 3
+-  sprite: s32'htn400_10', 3
++  sprite: s32'htn400_09', 1
++  sprite: s32'htn400_10', 1
+   endState: 
+ 
+ beginState: s32'236HaseiA'
+@@ -4477,10 +4477,10 @@
+   sprite: s32'htn408_01', 1
+   sprite: s32'htn408_01', 1
+   callSubroutine: s32'cmn_ShotMuteki'
+-  sprite: s32'htn408_02', 3
++  sprite: s32'htn408_02', 1
+   storeValue: (VARIABLE), 47, (STATIC), 0
+   ForceRandomVoice: s16'vxxx211', 100, s16'', 0, s16'', 0, s16'', 0
+-  sprite: s32'htn408_03', 3
++  sprite: s32'htn408_03', 1
+   sprite: s32'htn408_03', 3
+   Hair: 5
+   callSubroutine: s32'Tokitobashi_Dwaza_Ura'
+@@ -4541,11 +4541,11 @@
+   sprite: s32'htn036_01', 1
+   sprite: s32'htn036_01', 1
+   callSubroutine: s32'cmn_ShotMuteki'
+-  sprite: s32'htn036_02', 2
++  sprite: s32'htn036_02', 1
+   voiceLine: s16'vxxx212'
+   PrivateBankSE: 0, s32'ARC_BTL_HTN_Kehai_IdouBack', 100
+-  sprite: s32'htn036_03', 2
+-  sprite: s32'htn036_04', 2
++  sprite: s32'htn036_03', 1
++  sprite: s32'htn036_04', 1
+   sprite: s32'htn036_04', 3
+   moveToOffset: (SELF), 100, -400000, 0, 3
+   createParticle: s32'htn_warp02', (CENTER)

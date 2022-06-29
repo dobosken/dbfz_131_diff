@@ -1,0 +1,17 @@
+--- 1.30/BBS_VDNEF.bbs	2022-06-29 16:26:27.000000000 +0200
++++ 1.31/BBS_VDNEF.bbs	2022-06-29 17:54:22.000000000 +0200
+@@ -1604,12 +1604,12 @@
+       endIf: 
+     if: (VARIABLE), (Direction)
+       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), (PosXRaw), (STATIC), -2700000
+-        storeValue: (VARIABLE), (PosXRaw), (STATIC), -2700000
++        storeValue: (VARIABLE), (PosXRaw), (STATIC), -2900000
+         endIf: 
+       endIf: 
+     else: 
+       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), (PosXRaw), (STATIC), 2700000
+-        storeValue: (VARIABLE), (PosXRaw), (STATIC), 2700000
++        storeValue: (VARIABLE), (PosXRaw), (STATIC), 2900000
+         endIf: 
+       endElse: 
+     modifyPositionX: 1500000

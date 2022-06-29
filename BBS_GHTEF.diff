@@ -1,0 +1,22 @@
+--- 1.30/BBS_GHTEF.bbs	2022-06-29 16:26:15.000000000 +0200
++++ 1.31/BBS_GHTEF.bbs	2022-06-29 17:54:18.000000000 +0200
+@@ -162,15 +162,15 @@
+     LinkObjectPosition: 2
+     createObject: s32'crouchkidan_start_aura', (PLAYER)
+     endUpon: 
+-  sprite: s32'null', 2
++  sprite: s32'null', 1
+   setDepth: 50000
+-  sprite: s32'null', 2
++  sprite: s32'null', 1
+   setDepth: 50000
+   modifyPositionX: -10000
+   modifyPositionY: 10000
+-  sprite: s32'null', 2
++  sprite: s32'null', 1
+   setDepth: 50000
+-  sprite: s32'null', 2
++  sprite: s32'null', 1
+   setDepth: 70000
+   modifyPositionX: 30000
+   modifyPositionY: 30000

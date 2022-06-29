@@ -1,0 +1,118 @@
+--- 1.30/BBS_JNN.bbs	2022-06-29 16:26:19.000000000 +0200
++++ 1.31/BBS_JNN.bbs	2022-06-29 17:54:19.000000000 +0200
+@@ -2732,7 +2732,10 @@
+     removeWhiffCancelOption: s32'NmlAtk5A'
+     endUpon: 
+   sprite: s32'jnn200_00', 2
+-  sprite: s32'jnn200_01', 2
++  sprite: s32'jnn200_01', 1
++  sprite: s32'jnn200_01', 1
++  physicsImpulseX: 40000
++  horizontalMomentum: 75
+   sprite: s32'jnn200_02', 1
+   AttackVoice: 0, -1
+   CommonSetSE: s32'FuriShort', 0, 100
+@@ -2777,8 +2780,8 @@
+   horizontalMomentum: 50
+   AttackVoice: 1, -1
+   characterSfx: s32'ARC_BTL_JNN_Atk5A_2'
+-  sprite: s32'jnn201_02', 2
+-  sprite: s32'jnn201_03', 2
++  sprite: s32'jnn201_02', 1
++  sprite: s32'jnn201_03', 1
+   sprite: s32'jnn201_04', 1
+   hit: 
+   callSubroutine: s32'cmnRendaChain_Clear_Idling'
+@@ -3186,7 +3189,7 @@
+     endUpon: 
+   checkLastStateName: s32'NmlAtk2A'
+   gotoIfTrue: s32'Renda', 2, 0
+-  sprite: s32'jnn230_00', 2
++  sprite: s32'jnn230_00', 1
+   sprite: s32'jnn230_01', 2
+   sprite: s32'jnn230_02', 2
+   AttackVoice: 0, -1
+@@ -3205,7 +3208,7 @@
+   endLabel: 
+   exitState: 
+   beginLabel: s32'Renda'
+-  sprite: s32'jnn230_01', 3
++  sprite: s32'jnn230_01', 2
+   sprite: s32'jnn230_02', 3
+   CommonSetSE: s32'FuriShort', 0, 100
+   sprite: s32'jnn230_03', 1
+@@ -3394,11 +3397,11 @@
+   Hair: 5
+   HairReset: 1
+   sprite: s32'jnn204_01', 1
+-  sprite: s32'jnn204_02', 2
++  sprite: s32'jnn204_02', 1
+   sprite: s32'jnn204_03', 1
+   AttackVoice: 2, -1
+   CommonSetSE: s32'FuriShort', 0, 100
+-  sprite: s32'jnn204_04', 6
++  sprite: s32'jnn204_04', 5
+   addPositionX: 100000
+   physicsImpulseX: 8000
+   horizontalMomentum: 85
+@@ -4251,6 +4254,7 @@
+   hit: 
+   AtkZReversal: 1
+   createObject: s32'jnn262_Sword_Eff', (PLAYER)
++  addVelocityY: -12000
+   sprite: s32'jnn262_07', 1
+   sprite: s32'jnn262_08', 1
+   sprite: s32'jnn262_09', 2
+@@ -5625,17 +5629,17 @@
+     endIf: 
+   createObjectWithArg: s32'Jigoku_Shot', 0
+   createObject: s32'jnn404_Mazzle_Eff', 0
+-  sprite: s32'jnn404_11', 3
++  sprite: s32'jnn404_11', 1
+   physicsImpulseX: -5000
+   horizontalMomentum: 90
+-  sprite: s32'jnn404_12', 3
+-  sprite: s32'jnn404_13', 3
+-  sprite: s32'jnn404_14', 3
++  sprite: s32'jnn404_12', 1
++  sprite: s32'jnn404_13', 1
++  sprite: s32'jnn404_14', 1
+   resetGravity: 
+-  sprite: s32'jnn404_15', 3
+-  sprite: s32'jnn404_16', 3
+-  sprite: s32'jnn404_17', 3
+-  sprite: s32'jnn404_18', 3
++  sprite: s32'jnn404_15', 1
++  sprite: s32'jnn404_16', 1
++  sprite: s32'jnn404_17', 1
++  sprite: s32'jnn404_18', 2
+   endState: 
+ 
+ beginState: s32'AirJigoku_B'
+@@ -5683,18 +5687,18 @@
+     endIf: 
+   createObjectWithArg: s32'Jigoku_Shot', 0
+   createObject: s32'jnn404_Mazzle_Eff', 0
+-  sprite: s32'jnn404_11', 3
++  sprite: s32'jnn404_11', 1
+   haltMomentum: 1
+   physicsImpulseX: -5000
+   horizontalMomentum: 90
+-  sprite: s32'jnn404_12', 3
+-  sprite: s32'jnn404_13', 3
+-  sprite: s32'jnn404_14', 3
++  sprite: s32'jnn404_12', 1
++  sprite: s32'jnn404_13', 1
++  sprite: s32'jnn404_14', 1
+   resetGravity: 
+-  sprite: s32'jnn404_15', 3
+-  sprite: s32'jnn404_16', 3
+-  sprite: s32'jnn404_17', 3
+-  sprite: s32'jnn404_18', 3
++  sprite: s32'jnn404_15', 1
++  sprite: s32'jnn404_16', 1
++  sprite: s32'jnn404_17', 1
++  sprite: s32'jnn404_18', 2
+   endState: 
+ 
+ beginState: s32'AirJigoku_C'

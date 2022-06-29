@@ -1,0 +1,29 @@
+--- 1.30/BBS_OSMEF.bbs	2022-06-29 16:26:25.000000000 +0200
++++ 1.31/BBS_OSMEF.bbs	2022-06-29 17:54:20.000000000 +0200
+@@ -579,8 +579,8 @@
+     tensionGainOnConnect: 300
+     hitAirPushbackX: 15000
+     hitAirPushbackY: 20000
+-    untechAmount: 20
+-    enemyHitstopAddition: 0, 9, 9
++    untechAmount: 25
++    enemyHitstopAddition: 0, 12, 12
+     groundHitEffect: (AIR_FACE_UP)
+     AtkDamageEffect: 4, s32'cmn_BomHit'
+     AtkFrontDirection: 0
+@@ -1228,6 +1228,15 @@
+           storeValue: (VARIABLE), 50, (STATIC), 1
+           jumpToLabel: s32'curve'
+           endIf: 
++        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), (LoopCount), (STATIC), 3
++          checkInput: (INPUT_8)
++          if: (VARIABLE), (Result)
++            setAngle: -40000
++            SetSpeedByCurrentAngle: 80000, 0
++            storeValue: (VARIABLE), 50, (STATIC), 1
++            jumpToLabel: s32'curve'
++            endIf: 
++          endIf: 
+         endIf: 
+       endUpon: 
+     upon: 49
