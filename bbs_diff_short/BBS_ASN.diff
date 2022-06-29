@@ -1,0 +1,73 @@
+1337c1337
+<   sprite: s32'asn404_03', 2
+---
+>   sprite: s32'asn404_03', 1
+1339,1341c1339,1341
+<   sprite: s32'asn404_04', 2
+<   sprite: s32'asn404_05', 2
+<   sprite: s32'asn404_06', 2
+---
+>   sprite: s32'asn404_04', 1
+>   sprite: s32'asn404_05', 1
+>   sprite: s32'asn404_06', 1
+1344,1345c1344,1345
+<   sprite: s32'asn404_09', 2
+<   sprite: s32'asn404_10', 2
+---
+>   sprite: s32'asn404_09', 1
+>   sprite: s32'asn404_10', 1
+2246c2246
+<   physicsImpulseX: 5000
+---
+>   physicsImpulseX: 25000
+2252c2252
+<   horizontalMomentum: 20
+---
+>   horizontalMomentum: 40
+2316a2317
+>   addVelocityX: 80000
+2321a2323
+>   horizontalMomentum: 70
+2500c2502
+<   sprite: s32'asn203_06', 4
+---
+>   sprite: s32'asn203_06', 3
+2504c2506
+<   sprite: s32'asn203_07', 4
+---
+>   sprite: s32'asn203_07', 3
+2765a2768
+>   setGravity: 800
+2793c2796
+<   sprite: s32'asn205_01', 3
+---
+>   sprite: s32'asn205_01', 2
+2796c2799
+<   sprite: s32'asn205_03', 2
+---
+>   sprite: s32'asn205_03', 1
+2798,2800c2801,2803
+<   sprite: s32'asn205_04', 2
+<   sprite: s32'asn205_05', 2
+<   sprite: s32'asn205_06', 2
+---
+>   sprite: s32'asn205_04', 1
+>   sprite: s32'asn205_05', 1
+>   sprite: s32'asn205_06', 1
+3156c3159,3162
+<   sprite: s32'asn263_02', 4
+---
+>   if: (VARIABLE), (EnemyInHitstun)
+>     physicsImpulseX: 10000
+>     endIf: 
+>   sprite: s32'asn263_02', 3
+5029,5030c5035,5036
+<   sprite: s32'asn404_20', 5
+<   sprite: s32'asn404_21', 3
+---
+>   sprite: s32'asn404_20', 3
+>   sprite: s32'asn404_21', 2
+5032c5038
+<   sprite: s32'asn404_23', 2
+---
+>   sprite: s32'asn404_23', 1

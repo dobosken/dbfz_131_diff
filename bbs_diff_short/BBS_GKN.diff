@@ -1,0 +1,26 @@
+3537,3538c3537,3538
+<   sprite: s32'gkn235_09', 8
+<   sprite: s32'gkn235_10', 5
+---
+>   sprite: s32'gkn235_09', 6
+>   sprite: s32'gkn235_10', 4
+3542,3543c3542,3543
+<   sprite: s32'gkn235_11', 5
+<   sprite: s32'gkn235_12', 4
+---
+>   sprite: s32'gkn235_11', 4
+>   sprite: s32'gkn235_12', 3
+4964a4965,4968
+>   removeWhiffCancelOption: s32'Kamehameha_GKN_Naname'
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 15
+5159a5164,5167
+>   removeWhiffCancelOption: s32'AirKamehameha_GKN_Naname'
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 15
+5249a5258,5260
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 15

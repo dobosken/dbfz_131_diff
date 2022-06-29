@@ -1,0 +1,14 @@
+535c535
+<       hitAirPushbackX: 23000
+---
+>       hitAirPushbackX: 13000
+537c537,539
+<       untechAmount: 26
+---
+>       groundHitEffect: 12
+>       airHitEffect: 12
+>       untechAmount: 36
+542c544
+<         untechAmount: 32
+---
+>         untechAmount: 36

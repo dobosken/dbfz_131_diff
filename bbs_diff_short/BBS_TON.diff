@@ -1,0 +1,32 @@
+3668,3669c3668,3669
+<   sprite: s32'ton204_11', 3
+<   sprite: s32'ton204_12', 3
+---
+>   sprite: s32'ton204_11', 2
+>   sprite: s32'ton204_12', 2
+3671c3671
+<   sprite: s32'ton204_13', 3
+---
+>   sprite: s32'ton204_13', 2
+3687c3687
+<   sprite: s32'ton232_00', 4
+---
+>   sprite: s32'ton232_00', 3
+3690c3690
+<   sprite: s32'ton232_01', 4
+---
+>   sprite: s32'ton232_01', 3
+4109c4109,4113
+<   sprite: s32'ton403_14', 3
+---
+>   sprite: s32'ton403_14', 1
+>   sprite: s32'ton403_14', 2
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+8745a8750,8754
+> sprite: s32'ton431_49', 4
+> sprite: s32'ton431_50', 4
+> sprite: s32'ton431_51', 4
+> sprite: s32'ton431_49', 4
+> sprite: s32'ton431_50', 4

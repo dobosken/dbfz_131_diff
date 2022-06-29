@@ -1,0 +1,16 @@
+271c271
+<   sprite: s32'null', 3
+---
+>   sprite: s32'null', 2
+279c279
+<   sprite: s32'null', 2
+---
+>   sprite: s32'null', 1
+669c669
+<   sprite: s32'null', 2
+---
+>   sprite: s32'null', 1
+674c674
+<   sprite: s32'null', 2
+---
+>   sprite: s32'null', 1

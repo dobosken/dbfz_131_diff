@@ -1,0 +1,36 @@
+2620c2620
+<   sprite: s32'vtb203_08', 3
+---
+>   sprite: s32'vtb203_08', 6
+2624,2625c2624,2625
+<   sprite: s32'vtb203_10', 3
+<   sprite: s32'vtb203_11', 2
+---
+>   sprite: s32'vtb203_10', 4
+>   sprite: s32'vtb203_11', 3
+2898c2898
+<   sprite: s32'vtb205_00', 2
+---
+>   sprite: s32'vtb205_00', 1
+2901c2901
+<   sprite: s32'vtb205_02', 3
+---
+>   sprite: s32'vtb205_02', 1
+2988c2988
+<   sprite: s32'vtb233_00', 2
+---
+>   sprite: s32'vtb233_00', 1
+2992c2992
+<   sprite: s32'vtb233_02', 2
+---
+>   sprite: s32'vtb233_02', 1
+3083c3083
+<   sprite: s32'vtb205_02', 3
+---
+>   sprite: s32'vtb205_02', 2
+3089c3089
+<   sprite: s32'vtb205_06', 3
+---
+>   sprite: s32'vtb205_06', 2
+3476a3477
+>   AtkHoseiGuardBalance: 1000

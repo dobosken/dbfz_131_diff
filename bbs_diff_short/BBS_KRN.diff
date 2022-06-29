@@ -1,0 +1,45 @@
+4120d4119
+<   callSubroutine: s32'cmn_NandemoEnableStand'
+4405a4405,4406
+>   addVelocityY: -12000
+>   setGravity: 4000
+4602,4603c4603,4604
+<   sprite: s32'krn401_10', 3
+<   sprite: s32'krn401_13', 2
+---
+>   sprite: s32'krn401_10', 1
+>   sprite: s32'krn401_13', 1
+4605,4606c4606,4607
+<   sprite: s32'krn401_14', 2
+<   sprite: s32'krn401_15', 2
+---
+>   sprite: s32'krn401_14', 1
+>   sprite: s32'krn401_15', 1
+4727,4728c4728,4729
+<   sprite: s32'krn401_10', 3
+<   sprite: s32'krn401_11', 3
+---
+>   sprite: s32'krn401_10', 2
+>   sprite: s32'krn401_11', 2
+4730,4735c4731,4736
+<   sprite: s32'krn401_12', 3
+<   sprite: s32'krn401_10', 3
+<   sprite: s32'krn401_11', 3
+<   sprite: s32'krn401_13', 2
+<   sprite: s32'krn401_14', 2
+<   sprite: s32'krn401_15', 2
+---
+>   sprite: s32'krn401_12', 2
+>   sprite: s32'krn401_10', 1
+>   sprite: s32'krn401_11', 1
+>   sprite: s32'krn401_13', 1
+>   sprite: s32'krn401_14', 1
+>   sprite: s32'krn401_15', 1
+5525a5527,5529
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+5608a5613,5615
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10

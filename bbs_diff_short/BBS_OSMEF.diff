@@ -1,0 +1,16 @@
+582,583c582,583
+<     untechAmount: 20
+<     enemyHitstopAddition: 0, 9, 9
+---
+>     untechAmount: 25
+>     enemyHitstopAddition: 0, 12, 12
+1229a1230,1238
+>           endIf: 
+>         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), (LoopCount), (STATIC), 3
+>           checkInput: (INPUT_8)
+>           if: (VARIABLE), (Result)
+>             setAngle: -40000
+>             SetSpeedByCurrentAngle: 80000, 0
+>             storeValue: (VARIABLE), 50, (STATIC), 1
+>             jumpToLabel: s32'curve'
+>             endIf: 

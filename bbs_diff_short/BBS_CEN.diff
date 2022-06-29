@@ -1,0 +1,33 @@
+2322a2323,2325
+>   physicsImpulseX: 50000
+>   horizontalMomentum: 65
+>   EffectForLanding: 100, 1, 0
+3488a3492,3493
+>     damage1: 40
+>     AtkHoseiGuardBalance: 1000
+3860c3865
+<   sprite: s32'cen401_27', 3
+---
+>   sprite: s32'cen401_27', 2
+3864c3869
+<   sprite: s32'cen401_28', 3
+---
+>   sprite: s32'cen401_28', 2
+4067a4073,4074
+>   physicsImpulseX: 80000
+>   horizontalMomentum: 65
+4070,4071c4077,4078
+<   sprite: s32'cen401_17', 3
+<   sprite: s32'cen401_18', 4
+---
+>   sprite: s32'cen401_17', 2
+>   sprite: s32'cen401_18', 2
+5583a5591,5594
+>   removeWhiffCancelOption: s32'Kamehameha_Naname'
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+5761a5773,5775
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10

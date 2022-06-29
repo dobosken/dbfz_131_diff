@@ -1,0 +1,66 @@
+1715a1716,1718
+>   applyTo: 11
+>     whiffCrouch: 1
+>     endApply: 
+3230,3233c3233,3236
+<   sprite: s32'osm204_20', 4
+<   sprite: s32'osm204_21', 3
+<   sprite: s32'osm204_22', 3
+<   sprite: s32'osm204_23', 3
+---
+>   sprite: s32'osm204_20', 2
+>   sprite: s32'osm204_21', 2
+>   sprite: s32'osm204_22', 2
+>   sprite: s32'osm204_23', 2
+3734a3738,3740
+>   applyTo: 11
+>     whiffCrouch: 1
+>     endApply: 
+5022c5028
+<   hitAirPushbackX: 15000
+---
+>   hitAirPushbackX: 10000
+5835,5839c5841,5845
+<   sprite: s32'osm403_06', 3
+<   sprite: s32'osm403_07', 3
+<   sprite: s32'osm403_08', 3
+<   sprite: s32'osm403_09', 3
+<   sprite: s32'osm403_10', 2
+---
+>   sprite: s32'osm403_06', 2
+>   sprite: s32'osm403_07', 2
+>   sprite: s32'osm403_08', 2
+>   sprite: s32'osm403_09', 2
+>   sprite: s32'osm403_10', 1
+5867c5873
+<   sprite: s32'osm403_07', 3
+---
+>   sprite: s32'osm403_07', 2
+5869,5871c5875,5877
+<   sprite: s32'osm403_08', 3
+<   sprite: s32'osm403_09', 3
+<   sprite: s32'osm403_10', 2
+---
+>   sprite: s32'osm403_08', 2
+>   sprite: s32'osm403_09', 1
+>   sprite: s32'osm403_10', 1
+5896,5900c5902,5906
+<   sprite: s32'osm403_06', 3
+<   sprite: s32'osm403_07', 3
+<   sprite: s32'osm403_08', 3
+<   sprite: s32'osm403_09', 3
+<   sprite: s32'osm403_10', 2
+---
+>   sprite: s32'osm403_06', 2
+>   sprite: s32'osm403_07', 2
+>   sprite: s32'osm403_08', 2
+>   sprite: s32'osm403_09', 2
+>   sprite: s32'osm403_10', 1
+6379a6386,6388
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+6481a6491,6493
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10

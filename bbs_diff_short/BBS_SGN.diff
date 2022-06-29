@@ -1,0 +1,39 @@
+2142c2142,2147
+<   jumpToState: s32'Ryuken'
+---
+>   if: (VARIABLE), (DmgAtkAngle)
+>     jumpToState: s32'SU_Genkidama'
+>     endIf: 
+>   else: 
+>     jumpToState: s32'Ryuken'
+>     endIf: 
+2779c2784
+<   physicsImpulseX: 30000
+---
+>   physicsImpulseX: 60000
+6395a6401,6403
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+8345c8353
+<       moveToOffset: 32, 100, 2000000, 1000000, 7
+---
+>       moveToOffset: 32, 100, 1000000, 1000000, 7
+8348c8356
+<       moveToOffset: 32, 100, -2000000, 1000000, 7
+---
+>       moveToOffset: 32, 100, -1000000, 1000000, 7
+8352c8360
+<     moveToOffset: 32, 100, -2000000, 1000000, 7
+---
+>     moveToOffset: 32, 100, -1000000, 1000000, 7
+8358c8366
+<     moveToOffset: 32, 100, 2500000, 1000000, 2
+---
+>     moveToOffset: 32, 100, 1500000, 1000000, 2
+8361c8369
+<     moveToOffset: 32, 100, -2500000, 1000000, 2
+---
+>     moveToOffset: 32, 100, -1500000, 1000000, 2
+8372a8381
+>     PlayerActionInitializeByCategory: 20, 1

@@ -1,0 +1,17 @@
+796d795
+<     setNoCollision: 1
+799d797
+<     setNoCollision: 1
+800a799,801
+>     ScreenAdditionalWidth: -1
+>     ignorePushback: 1
+>     setNoCollision: 0
+824c825
+<   physicsImpulseX: 29000
+---
+>   physicsImpulseX: 39000
+849d849
+<     setNoCollision: 1
+851,852d850
+<     setNoCollision: 1
+<     PushFix: 1

@@ -1,0 +1,82 @@
+2310c2310
+<     sprite: s32'gtl201_01', 3
+---
+>     sprite: s32'gtl201_01', 2
+2391a2392
+>     deactivateObjectByName: s32'GTL_5A3rdEff'
+2455c2456
+<     sprite: s32'gtl203_13', 3
+---
+>     sprite: s32'gtl203_13', 2
+4257,4258c4258,4259
+<             ifOperation: (IS_LESSER), (VARIABLE), (SpeedX), (STATIC), 25000
+<               addVelocityX: 2500
+---
+>             ifOperation: (IS_LESSER), (VARIABLE), (SpeedX), (STATIC), 50000
+>               addVelocityX: 7500
+4260,4261c4261,4262
+<             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), (SpeedX), (STATIC), 25000
+<               physicsImpulseX: 25000
+---
+>             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), (SpeedX), (STATIC), 50000
+>               physicsImpulseX: 50000
+4265,4266c4266,4267
+<             ifOperation: (IS_GREATER), (VARIABLE), (SpeedX), (STATIC), -25000
+<               addVelocityX: -2500
+---
+>             ifOperation: (IS_GREATER), (VARIABLE), (SpeedX), (STATIC), -50000
+>               addVelocityX: -7500
+4268,4269c4269,4270
+<             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), (SpeedX), (STATIC), -25000
+<               physicsImpulseX: -25000
+---
+>             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), (SpeedX), (STATIC), -50000
+>               physicsImpulseX: -50000
+4275c4276
+<               addVelocityY: 2500
+---
+>               addVelocityY: 5000
+4284c4285
+<               addVelocityY: -2500
+---
+>               addVelocityY: -5000
+4372,4373c4373,4374
+<             ifOperation: (IS_LESSER), (VARIABLE), (SpeedX), (STATIC), 25000
+<               addVelocityX: 2500
+---
+>             ifOperation: (IS_LESSER), (VARIABLE), (SpeedX), (STATIC), 50000
+>               addVelocityX: 7500
+4375,4376c4376,4377
+<             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), (SpeedX), (STATIC), 25000
+<               physicsImpulseX: 25000
+---
+>             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), (SpeedX), (STATIC), 50000
+>               physicsImpulseX: 50000
+4380,4381c4381,4382
+<             ifOperation: (IS_GREATER), (VARIABLE), (SpeedX), (STATIC), -25000
+<               addVelocityX: -2500
+---
+>             ifOperation: (IS_GREATER), (VARIABLE), (SpeedX), (STATIC), -50000
+>               addVelocityX: -7500
+4383,4384c4384,4385
+<             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), (SpeedX), (STATIC), -25000
+<               physicsImpulseX: -25000
+---
+>             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), (SpeedX), (STATIC), -50000
+>               physicsImpulseX: -50000
+4390c4391
+<               addVelocityY: 2500
+---
+>               addVelocityY: 5000
+4399c4400
+<               addVelocityY: -2500
+---
+>               addVelocityY: -5000
+5294a5296,5298
+>     enableWhiffCancel: 1
+>     addWhiffCancelOption: s32'CmnActHomingDash'
+>     whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+5611a5616,5618
+>     sprite: s32'gtl430_26', 3
+>     sprite: s32'gtl430_27', 3
+>     sprite: s32'gtl430_25', 3

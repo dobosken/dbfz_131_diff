@@ -1,0 +1,55 @@
+410c410
+<     moveInput: (INPUT_ANY_FORWARD)
+---
+>     moveInput: (INPUT_6)
+413c413
+<     moveInput: (INPUT_ANY_FORWARD)
+---
+>     moveInput: (INPUT_6)
+438c438
+<     moveInput: (INPUT_ANY_FORWARD)
+---
+>     moveInput: (INPUT_6)
+453c453
+<     moveInput: (INPUT_ANY_FORWARD)
+---
+>     moveInput: (INPUT_6)
+2426a2427,2429
+>       if: (VARIABLE), (IsSparking)
+>         groundHitEffect: (NORMAL_UPPER)
+>         endIf: 
+2440,2443c2443,2462
+<       PerSpeedX: 10
+<       addVelocityX: 13000
+<       PerSpeedY: 20
+<       addVelocityY: 28000
+---
+>       if: (VARIABLE), (IsSparking)
+>         IfBeginCoType: 32, 2, 31
+>           PerSpeedX: 10
+>           PerSpeedY: 25
+>           addVelocityX: 5000
+>           addVelocityY: 15000
+>           endIf: 
+>         else: 
+>           PerSpeedX: 10
+>           addVelocityX: 13000
+>           PerSpeedY: 20
+>           addVelocityY: 28000
+>           endElse: 
+>         endIf: 
+>       else: 
+>         PerSpeedX: 10
+>         addVelocityX: 13000
+>         PerSpeedY: 20
+>         addVelocityY: 28000
+>         endElse: 
+3906a3926,3933
+>       endIf: 
+>     checkLastStateName: s32'CmnActHomingDash'
+>     if: (VARIABLE), (Result)
+>       whiffCrouch: 0
+>       endIf: 
+>     checkLastStateName: s32'MTN_AirHoming'
+>     if: (VARIABLE), (Result)
+>       whiffCrouch: 0

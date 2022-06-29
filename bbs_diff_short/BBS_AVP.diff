@@ -1,0 +1,32 @@
+3233c3233
+<   sprite: s32'avp231_11', 3
+---
+>   sprite: s32'avp231_11', 2
+4442c4442
+<   sprite: s32'avp400_09', 5
+---
+>   sprite: s32'avp400_09', 4
+4445a4446,4448
+>   sprite: s32'avp400_09', 1
+>   enableWhiffCancel: 1
+>   SenkoInputSpecial: 8
+4446a4450
+>   enableWhiffCancel: 0
+4785c4789
+<   sprite: s32'avp400_09', 3
+---
+>   sprite: s32'avp400_09', 2
+4788a4793,4795
+>   sprite: s32'avp400_09', 1
+>   enableWhiffCancel: 1
+>   SenkoInputSpecial: 8
+4789a4797
+>   enableWhiffCancel: 0
+4885c4893
+<   physicsImpulseX: 80000
+---
+>   physicsImpulseX: 120000
+5664c5672
+<   physicsImpulseX: 40000
+---
+>   physicsImpulseX: 60000

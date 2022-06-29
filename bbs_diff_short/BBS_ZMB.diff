@@ -1,0 +1,135 @@
+2221,2222d2220
+<     removeGatlingOption: s32'NmlAtk5A'
+<     removeWhiffCancelOption: s32'NmlAtk5A'
+2588a2587
+>   physicsImpulseX: 20000
+2590a2590
+>   physicsImpulseX: 40000
+2647,2648c2647,2648
+<   sprite: s32'zmb232_03', 2
+<   sprite: s32'zmb232_04', 2
+---
+>   sprite: s32'zmb232_03', 1
+>   sprite: s32'zmb232_04', 1
+3710,3712c3710,3712
+<   sprite: s32'zmb402_03', 2
+<   sprite: s32'zmb402_04', 2
+<   sprite: s32'zmb402_05', 2
+---
+>   sprite: s32'zmb402_03', 1
+>   sprite: s32'zmb402_04', 1
+>   sprite: s32'zmb402_05', 1
+3768,3769c3768,3769
+<   sprite: s32'zmb402_01', 2
+<   sprite: s32'zmb402_02', 2
+---
+>   sprite: s32'zmb402_01', 1
+>   sprite: s32'zmb402_02', 1
+3776,3779c3776,3779
+<   sprite: s32'zmb402_08', 3
+<   sprite: s32'zmb402_09', 3
+<   sprite: s32'zmb402_10', 3
+<   sprite: s32'zmb402_11', 2
+---
+>   sprite: s32'zmb402_08', 2
+>   sprite: s32'zmb402_09', 1
+>   sprite: s32'zmb402_10', 1
+>   sprite: s32'zmb402_11', 1
+3809c3809
+<   sprite: s32'zmb402_22', 3
+---
+>   sprite: s32'zmb402_22', 2
+3832c3832
+<   sprite: s32'zmb402_01', 2
+---
+>   sprite: s32'zmb402_01', 1
+3834,3837c3834,3837
+<   sprite: s32'zmb402_02', 2
+<   sprite: s32'zmb402_03', 2
+<   sprite: s32'zmb402_04', 2
+<   sprite: s32'zmb402_05', 2
+---
+>   sprite: s32'zmb402_02', 1
+>   sprite: s32'zmb402_03', 1
+>   sprite: s32'zmb402_04', 1
+>   sprite: s32'zmb402_05', 1
+3840,3841c3840,3841
+<   sprite: s32'zmb402_08', 2
+<   sprite: s32'zmb402_11', 2
+---
+>   sprite: s32'zmb402_08', 1
+>   sprite: s32'zmb402_11', 1
+3902,3904c3902,3904
+<   sprite: s32'zmb402_03ex01', 2
+<   sprite: s32'zmb402_04ex01', 2
+<   sprite: s32'zmb402_05ex01', 2
+---
+>   sprite: s32'zmb402_03ex01', 1
+>   sprite: s32'zmb402_04ex01', 1
+>   sprite: s32'zmb402_05ex01', 1
+3951c3951
+<   sprite: s32'zmb402_22', 3
+---
+>   sprite: s32'zmb402_22', 2
+3971c3971
+<   sprite: s32'zmb402_18', 2
+---
+>   sprite: s32'zmb402_18', 1
+3978,3980c3978,3979
+<   sprite: s32'zmb402_19', 2
+<   sprite: s32'zmb402_02ex01', 2
+<   ForceRandomVoice: s16'vxxx204', 100, s16'vxxx206', 100, s16'', 0, s16'', 0
+---
+>   sprite: s32'zmb402_19', 1
+>   sprite: s32'zmb402_02ex01', 1
+3981a3981
+>   ForceRandomVoice: s16'vxxx204', 100, s16'vxxx206', 100, s16'', 0, s16'', 0
+3986,3989c3986,3989
+<   sprite: s32'zmb402_08ex01', 3
+<   sprite: s32'zmb402_09ex01', 3
+<   sprite: s32'zmb402_10ex01', 3
+<   sprite: s32'zmb402_11ex01', 2
+---
+>   sprite: s32'zmb402_08ex01', 2
+>   sprite: s32'zmb402_09ex01', 1
+>   sprite: s32'zmb402_10ex01', 1
+>   sprite: s32'zmb402_11ex01', 1
+4032c4032
+<   sprite: s32'zmb402_22', 3
+---
+>   sprite: s32'zmb402_22', 2
+4060,4061c4060,4061
+<   sprite: s32'zmb402_19', 2
+<   sprite: s32'zmb402_02ex01', 2
+---
+>   sprite: s32'zmb402_19', 1
+>   sprite: s32'zmb402_02ex01', 1
+4063,4065c4063,4065
+<   sprite: s32'zmb402_03ex01', 2
+<   sprite: s32'zmb402_04ex01', 2
+<   sprite: s32'zmb402_05ex01', 2
+---
+>   sprite: s32'zmb402_03ex01', 1
+>   sprite: s32'zmb402_04ex01', 1
+>   sprite: s32'zmb402_05ex01', 1
+4068,4069c4068,4069
+<   sprite: s32'zmb402_08ex01', 2
+<   sprite: s32'zmb402_11ex01', 2
+---
+>   sprite: s32'zmb402_08ex01', 1
+>   sprite: s32'zmb402_11ex01', 1
+4112c4112
+<   sprite: s32'zmb402_22', 3
+---
+>   sprite: s32'zmb402_22', 2
+4190,4191c4190,4191
+<   sprite: s32'zmb404_01', 2
+<   sprite: s32'zmb404_02', 2
+---
+>   sprite: s32'zmb404_01', 1
+>   sprite: s32'zmb404_02', 1
+4208c4208,4209
+<   sprite: s32'zmb404_03', 1
+---
+>   sprite: s32'zmb404_03', 2
+>   sprite: s32'zmb404_04', 1

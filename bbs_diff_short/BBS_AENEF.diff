@@ -1,0 +1,12 @@
+1093a1094
+>   spriteAddTime: 1, 2, 214
+1094a1096
+>   spriteAddTime: 1, 2, 214
+1098a1101
+>   spriteAddTime: 1, 2, 214
+1099a1103
+>   spriteAddTime: 1, 2, 214
+3258c3262
+<   sprite: s32'null', 4
+---
+>   sprite: s32'null', 2

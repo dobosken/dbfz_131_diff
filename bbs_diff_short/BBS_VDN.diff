@@ -1,0 +1,40 @@
+3036c3036
+<   sprite: s32'vdn204_10', 8
+---
+>   sprite: s32'vdn204_10', 5
+3201c3201
+<   sprite: s32'vdn206_31', 6
+---
+>   sprite: s32'vdn206_31', 3
+3205c3205
+<   sprite: s32'vdn206_35', 3
+---
+>   sprite: s32'vdn206_35', 2
+3443,3444c3443,3444
+<   sprite: s32'vdn263_01', 2
+<   sprite: s32'vdn263_02', 2
+---
+>   sprite: s32'vdn263_01', 1
+>   sprite: s32'vdn263_02', 1
+3447c3447
+<   sprite: s32'vdn263_03', 3
+---
+>   sprite: s32'vdn263_03', 2
+5535c5535
+<           physicsImpulseX: 30000
+---
+>           physicsImpulseX: 45000
+5547c5547
+<           physicsImpulseX: 35000
+---
+>           physicsImpulseX: 45000
+5654a5655
+>     enableSpecialCancel: 1
+6415a6417
+>     headInvul: 1
+6520c6522
+<   untechAmount: 20
+---
+>   untechAmount: 40
+6581a6584
+>   headInvul: 0

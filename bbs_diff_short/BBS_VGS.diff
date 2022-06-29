@@ -1,0 +1,88 @@
+2326c2326
+<     sprite: s32'vgs202_06', 3
+---
+>     sprite: s32'vgs202_06', 2
+2328,2329c2328,2329
+<     sprite: s32'vgs202_07', 3
+<     sprite: s32'vgs202_08', 3
+---
+>     sprite: s32'vgs202_07', 2
+>     sprite: s32'vgs202_08', 2
+2465c2465
+<     sprite: s32'vgs204_16', 3
+---
+>     sprite: s32'vgs204_16', 2
+2497c2497
+<     sprite: s32'vgs231_13', 3
+---
+>     sprite: s32'vgs231_13', 2
+2569c2569
+<     physicsImpulseX: 40000
+---
+>     physicsImpulseX: 60000
+2853,2854c2853,2854
+<     sprite: s32'vgs205_07', 4
+<     sprite: s32'vgs205_08', 3
+---
+>     sprite: s32'vgs205_07', 3
+>     sprite: s32'vgs205_08', 2
+2858,2859c2858,2859
+<     sprite: s32'vgs205_14', 4
+<     sprite: s32'vgs205_15', 3
+---
+>     sprite: s32'vgs205_14', 3
+>     sprite: s32'vgs205_15', 2
+3285c3285
+<     damage1: 500
+---
+>     damage1: 800
+3322c3322
+<     sprite: s32'vgs400_18', 3
+---
+>     sprite: s32'vgs400_18', 2
+3325c3325
+<     sprite: s32'vgs400_19', 3
+---
+>     sprite: s32'vgs400_19', 2
+3327c3327
+<     sprite: s32'vgs400_20', 3
+---
+>     sprite: s32'vgs400_20', 1
+3363,3364c3363,3365
+<               hitAirPushbackY: 45000
+<               untechAmount: 60
+---
+>               hitAirPushbackY: 50000
+>               untechAmount: 70
+>               Unknown778: 1500
+3558c3559
+<     damage1: 500
+---
+>     damage1: 800
+3631,3632c3632,3634
+<               hitAirPushbackY: 45000
+<               untechAmount: 60
+---
+>               hitAirPushbackY: 50000
+>               untechAmount: 70
+>               Unknown778: 1500
+4095c4097
+<     sprite: s32'vgs402_03', 6
+---
+>     sprite: s32'vgs402_03', 1
+4515c4517
+<     sprite: s32'vgs205_01', 3
+---
+>     sprite: s32'vgs205_01', 2
+4519c4521
+<     sprite: s32'vgs205_03', 2
+---
+>     sprite: s32'vgs205_03', 1
+4611c4613
+<     sprite: s32'vgs265_01', 2
+---
+>     sprite: s32'vgs265_01', 1
+4616c4618
+<     sprite: s32'vgs265_03', 2
+---
+>     sprite: s32'vgs265_03', 1

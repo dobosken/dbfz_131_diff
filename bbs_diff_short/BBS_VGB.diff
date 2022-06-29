@@ -1,0 +1,21 @@
+2550c2550
+<   sprite: s32'vgb203_16', 3
+---
+>   sprite: s32'vgb203_16', 2
+2584c2584
+<   sprite: s32'vgb231_13', 3
+---
+>   sprite: s32'vgb231_13', 2
+3879c3879
+<     hitStop: 10
+---
+>     hitStop: 3
+5143c5143
+<   sprite: s32'vgb403_00', 4
+---
+>   sprite: s32'vgb403_00', 2
+5157a5158,5161
+>   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), (EnemyDiffY), (STATIC), 200000
+>     physicsImpulseY: 5000
+>     storeValue: (VARIABLE), 46, (STATIC), 1
+>     endIf: 

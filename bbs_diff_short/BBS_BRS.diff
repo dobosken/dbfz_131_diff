@@ -1,0 +1,78 @@
+2565,2566c2565,2566
+<   sprite: s32'brs230_05', 4
+<   sprite: s32'brs230_06', 4
+---
+>   sprite: s32'brs230_05', 3
+>   sprite: s32'brs230_06', 3
+2586c2586
+<   sprite: s32'brs203_00', 2
+---
+>   sprite: s32'brs203_00', 3
+2589,2591c2589,2591
+<   sprite: s32'brs203_01', 2
+<   sprite: s32'brs203_02', 2
+<   physicsImpulseX: 65000
+---
+>   sprite: s32'brs203_01', 4
+>   sprite: s32'brs203_02', 1
+>   physicsImpulseX: 100000
+2593,2594c2593,2594
+<   sprite: s32'brs203_03', 2
+<   horizontalMomentum: 90
+---
+>   sprite: s32'brs203_03', 1
+>   horizontalMomentum: 85
+2596c2596
+<   sprite: s32'brs203_04', 2
+---
+>   sprite: s32'brs203_04', 1
+2606a2607
+>   horizontalMomentum: 70
+2661c2662
+<   sprite: s32'brs231_09', 3
+---
+>   sprite: s32'brs231_09', 6
+2664,2665c2665,2666
+<   sprite: s32'brs231_12', 2
+<   sprite: s32'brs231_13', 2
+---
+>   sprite: s32'brs231_12', 3
+>   sprite: s32'brs231_13', 3
+2667c2668
+<   sprite: s32'brs231_14', 2
+---
+>   sprite: s32'brs231_14', 3
+2929,2932c2930,2933
+<   sprite: s32'brs205_06', 3
+<   sprite: s32'brs205_07', 3
+<   sprite: s32'brs205_09', 3
+<   sprite: s32'brs205_10', 3
+---
+>   sprite: s32'brs205_06', 5
+>   sprite: s32'brs205_07', 5
+>   sprite: s32'brs205_09', 4
+>   sprite: s32'brs205_10', 4
+2946c2947
+<   sprite: s32'brs260_02', 2
+---
+>   sprite: s32'brs260_02', 1
+3575a3577
+>         pushbackX: 350
+3586a3589
+>         pushbackX: 350
+4072a4076,4078
+>   if: (VARIABLE), 56
+>     physicsImpulseX: 60000
+>     endIf: 
+4123a4130,4132
+>   if: (VARIABLE), 56
+>     physicsImpulseX: 120000
+>     endIf: 
+4468a4478,4480
+>   if: (VARIABLE), 56
+>     physicsImpulseX: 125000
+>     endIf: 
+4517a4530,4532
+>   if: (VARIABLE), 56
+>     physicsImpulseX: 180000
+>     endIf: 

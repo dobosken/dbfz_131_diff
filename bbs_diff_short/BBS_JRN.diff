@@ -1,0 +1,45 @@
+2190,2191d2189
+<     removeGatlingOption: s32'NmlAtk5A'
+<     removeWhiffCancelOption: s32'NmlAtk5A'
+2566c2564
+<   sprite: s32'jrn203_01', 4
+---
+>   sprite: s32'jrn203_01', 2
+2630,2631c2628,2629
+<   sprite: s32'jrn231_01', 2
+<   sprite: s32'jrn231_02', 2
+---
+>   sprite: s32'jrn231_01', 1
+>   sprite: s32'jrn231_02', 1
+3961c3959
+<   sprite: s32'jrn400_00', 2
+---
+>   sprite: s32'jrn400_00', 1
+3963,3964c3961,3962
+<   sprite: s32'jrn400_01', 2
+<   sprite: s32'jrn400_02', 2
+---
+>   sprite: s32'jrn400_01', 1
+>   sprite: s32'jrn400_02', 1
+4074c4072
+<   sprite: s32'jrn401_00', 2
+---
+>   sprite: s32'jrn401_00', 1
+4077,4078c4075,4076
+<   sprite: s32'jrn401_01', 2
+<   sprite: s32'jrn401_02', 2
+---
+>   sprite: s32'jrn401_01', 1
+>   sprite: s32'jrn401_02', 1
+4316,4317d4313
+<   sprite: s32'jrn010_01', 1
+<   sprite: s32'jrn402_24', 1
+4322a4319,4320
+>   sprite: s32'jrn010_01', 1
+>   sprite: s32'jrn402_24', 1
+4495,4496c4493,4494
+<   sprite: s32'jrn404_04', 3
+<   sprite: s32'jrn404_05', 2
+---
+>   sprite: s32'jrn404_04', 2
+>   sprite: s32'jrn404_05', 1

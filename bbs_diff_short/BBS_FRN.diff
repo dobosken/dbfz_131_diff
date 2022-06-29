@@ -1,0 +1,104 @@
+157c157
+<     move_ShareChain: s32'NmlAtk2D'
+---
+>     maxChainIntoSelf: 1
+181c181
+<     move_ShareChain: s32'NmlAtk2D'
+---
+>     maxChainIntoSelf: 1
+3172,3173c3172,3173
+<   sprite: s32'frn232_01', 2
+<   sprite: s32'frn232_02', 2
+---
+>   sprite: s32'frn232_01', 1
+>   sprite: s32'frn232_02', 1
+3248,3249c3248,3249
+<   sprite: s32'frn205_02', 2
+<   sprite: s32'frn205_03', 2
+---
+>   sprite: s32'frn205_02', 1
+>   sprite: s32'frn205_03', 1
+3376a3377,3378
+>     addWhiffCancelOption: s32'NmlAtk2D'
+>     addWhiffCancelOption: s32'NmlAtk3D'
+3406c3408
+<   sprite: s32'frn233_03', 2
+---
+>   sprite: s32'frn233_03', 1
+3408c3410
+<   sprite: s32'frn233_05', 2
+---
+>   sprite: s32'frn233_05', 1
+3411c3413
+<   sprite: s32'frn233_06', 2
+---
+>   sprite: s32'frn233_06', 1
+3443a3446,3447
+>     addWhiffCancelOption: s32'NmlAtk1D'
+>     addWhiffCancelOption: s32'NmlAtk3D'
+3473c3477
+<   sprite: s32'frn233_03', 2
+---
+>   sprite: s32'frn233_03', 1
+3475c3479
+<   sprite: s32'frn233_05', 2
+---
+>   sprite: s32'frn233_05', 1
+3478c3482
+<   sprite: s32'frn233_06', 2
+---
+>   sprite: s32'frn233_06', 1
+3510a3515,3516
+>     addWhiffCancelOption: s32'NmlAtk1D'
+>     addWhiffCancelOption: s32'NmlAtk2D'
+3540c3546
+<   sprite: s32'frn233_03', 2
+---
+>   sprite: s32'frn233_03', 1
+3542c3548
+<   sprite: s32'frn233_05', 2
+---
+>   sprite: s32'frn233_05', 1
+3545c3551
+<   sprite: s32'frn233_06', 2
+---
+>   sprite: s32'frn233_06', 1
+3877c3883
+<   sprite: s32'frn265_01', 2
+---
+>   sprite: s32'frn265_01', 1
+3879c3885
+<   sprite: s32'frn265_03', 2
+---
+>   sprite: s32'frn265_03', 1
+3881c3887
+<   sprite: s32'frn265_05', 2
+---
+>   sprite: s32'frn265_05', 1
+4140d4145
+<   sprite: s32'frn400_10', 4
+4142,4144c4147,4149
+<   sprite: s32'frn400_12', 3
+<   sprite: s32'frn400_13', 3
+<   sprite: s32'frn400_14', 3
+---
+>   sprite: s32'frn400_12', 2
+>   sprite: s32'frn400_13', 2
+>   sprite: s32'frn400_14', 2
+4251c4256
+<   sprite: s32'frn402_16', 3
+---
+>   sprite: s32'frn402_16', 1
+4253,4257c4258,4259
+<   sprite: s32'frn402_17', 3
+<   sprite: s32'frn402_18', 3
+<   sprite: s32'frn402_19', 3
+<   sprite: s32'frn402_20', 3
+<   sprite: s32'frn022_05', 3
+---
+>   landingRecovery: 6, 0
+>   sprite: s32'frn022_05', 2
+4461,4463d4462
+<   sprite: s32'frn402_18', 3
+<   sprite: s32'frn402_19', 3
+<   sprite: s32'frn402_20', 3

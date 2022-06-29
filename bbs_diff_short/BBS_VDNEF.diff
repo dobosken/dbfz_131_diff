@@ -1,0 +1,8 @@
+1607c1607
+<         storeValue: (VARIABLE), (PosXRaw), (STATIC), -2700000
+---
+>         storeValue: (VARIABLE), (PosXRaw), (STATIC), -2900000
+1612c1612
+<         storeValue: (VARIABLE), (PosXRaw), (STATIC), 2700000
+---
+>         storeValue: (VARIABLE), (PosXRaw), (STATIC), 2900000

@@ -1,0 +1,18 @@
+141c141
+<     maxChainIntoSelf: 1
+---
+>     maxChainIntoSelf: 2
+2968c2968
+<   physicsImpulseX: 40000
+---
+>   physicsImpulseX: 45000
+3209a3210,3215
+>     addWhiffCancelOption: s32'NmlAtk5C'
+>     whiffCancelOptionBufferTime: s32'NmlAtk5C', 8
+>     addWhiffCancelOption: s32'NmlAtk2C'
+>     whiffCancelOptionBufferTime: s32'NmlAtk2C', 8
+>     addWhiffCancelOption: s32'NmlAtk5D'
+>     whiffCancelOptionBufferTime: s32'NmlAtk5D', 8
+4804,4805d4809
+<   sprite: s32'bsn403_06', 3
+<   sprite: s32'bsn403_04', 3

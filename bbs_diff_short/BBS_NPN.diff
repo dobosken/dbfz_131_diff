@@ -1,0 +1,38 @@
+2827c2827
+<   sprite: s32'npn260_03', 3
+---
+>   sprite: s32'npn260_03', 6
+2830c2830
+<   sprite: s32'npn260_04', 3
+---
+>   sprite: s32'npn260_04', 1
+2832c2832
+<   sprite: s32'npn260_05', 3
+---
+>   sprite: s32'npn260_05', 2
+3388a3389,3393
+>     blockstunAmount: 22
+>     upon: (ON_ATTACK_HIT_PLAYER_GUARD)
+>       hitStop: 21
+>       cameraShake: s32'ShakeTate', 400, 0, 25, 10
+>       endUpon: 
+3968c3973
+<   sprite: s32'npn402_03', 2
+---
+>   sprite: s32'npn402_03', 1
+3971c3976
+<   sprite: s32'npn402_04', 2
+---
+>   sprite: s32'npn402_04', 1
+4010c4015
+<   sprite: s32'npn403_00', 2
+---
+>   sprite: s32'npn403_00', 1
+4016d4020
+<   characterSfx: s32'ARC_BTL_NPN_Pi_Basa'
+4017a4022
+>   characterSfx: s32'ARC_BTL_NPN_Pi_Basa'
+4020c4025
+<   sprite: s32'npn403_03', 2
+---
+>   sprite: s32'npn403_03', 1

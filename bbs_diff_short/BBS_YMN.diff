@@ -1,0 +1,68 @@
+312c312
+<     maxChainIntoSelf: 1
+---
+>     maxChainIntoSelf: 2
+321c321
+<     maxChainIntoSelf: 1
+---
+>     maxChainIntoSelf: 2
+2535,2536d2534
+<     removeGatlingOption: s32'NmlAtk5A'
+<     removeWhiffCancelOption: s32'NmlAtk5A'
+2944a2943
+>     pushbackX: 50
+2988a2988,2990
+>   upon: (HIT_OR_GUARD_ANY)
+>     addGatlingOption: s32'NmlAtkAir2C'
+>     endUpon: 
+3308c3310
+<     untechAmount: 26
+---
+>     untechAmount: 36
+3310a3313,3318
+>     enemyHitstopAddition: 0, 5, 5
+>     addGatlingOption: s32'NmlAtk5C'
+>     addGatlingOption: s32'NmlAtk2C'
+>     addGatlingOption: s32'NmlAtk5D'
+>     addGatlingOption: s32'NmlAtk2D'
+>     SenkoInputSpecial: 12
+3321a3330,3332
+>     upon: (ON_ATTACK_HIT_MAIN_PLAYER_DAMAGE)
+>       horizontalMomentum: 100
+>       endUpon: 
+3571a3583
+>     addWhiffCancelOption: s32'Kamehameha'
+3823a3836
+>     addWhiffCancelOption: s32'Kamehameha'
+3881,3882c3894,3895
+<   sprite: s32'ymn400_01', 2
+<   sprite: s32'ymn400_04', 2
+---
+>   sprite: s32'ymn400_01', 1
+>   sprite: s32'ymn400_04', 1
+3893c3906
+<   physicsImpulseX: 40000
+---
+>   physicsImpulseX: 50000
+4287a4301
+>     addWhiffCancelOption: s32'Kamehameha'
+4724a4739
+>       addWhiffCancelOption: s32'Kamehameha'
+4742c4757,4760
+<   voiceLine: s16'vxxx209'
+---
+>   checkLastStateName: s32'RFK_ushiro'
+>   ifNot: (VARIABLE), (Result)
+>     voiceLine: s16'vxxx209'
+>     endIf: 
+4780c4798,4801
+<   voiceLine: s16'vxxx210'
+---
+>   checkLastStateName: s32'RFK_ushiro'
+>   ifNot: (VARIABLE), (Result)
+>     voiceLine: s16'vxxx210'
+>     endIf: 
+5920a5942,5944
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10

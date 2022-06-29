@@ -1,0 +1,16 @@
+1307c1307
+<       enemyHitstopAddition: 0, 5, 5
+---
+>       enemyHitstopAddition: 5, 5, 5
+2982a2983
+>       Unknown778: 1600
+3028c3029
+<         verticalMomentum: 95
+---
+>         verticalMomentum: 90
+3066,3067c3067,3068
+<   physicsImpulseX: 14000
+<   physicsImpulseY: -20000
+---
+>   physicsImpulseX: 19000
+>   physicsImpulseY: -40000

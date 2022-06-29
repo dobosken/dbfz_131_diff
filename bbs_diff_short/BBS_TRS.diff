@@ -1,0 +1,38 @@
+2806c2806
+<   physicsImpulseX: 100000
+---
+>   physicsImpulseX: 140000
+3588c3588
+<   sprite: s32'trs400_01', 3
+---
+>   sprite: s32'trs400_01', 2
+3743c3743
+<   sprite: s32'trs400_01', 2
+---
+>   sprite: s32'trs400_01', 1
+3748c3748
+<   sprite: s32'trs400_03', 3
+---
+>   sprite: s32'trs400_03', 2
+3919c3919
+<   sprite: s32'trs400_01', 2
+---
+>   sprite: s32'trs400_01', 1
+4330c4330
+<   physicsImpulseY: 29000
+---
+>   physicsImpulseY: 26000
+4916,4917c4916,4917
+<   physicsImpulseX: -11000
+<   physicsImpulseY: 50000
+---
+>   physicsImpulseX: -5000
+>   physicsImpulseY: 55000
+5088c5088
+<   physicsImpulseY: 37000
+---
+>   physicsImpulseY: 7000
+5341a5342,5344
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10

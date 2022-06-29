@@ -1,0 +1,33 @@
+2336a2337,2338
+>   physicsImpulseX: 100000
+>   horizontalMomentum: 65
+2712c2714
+<   sprite: s32'clf203_01', 2
+---
+>   sprite: s32'clf203_01', 1
+2866c2868
+<   physicsImpulseX: 100000
+---
+>   physicsImpulseX: 140000
+2877c2879
+<   sprite: s32'keep', 3
+---
+>   sprite: s32'keep', 1
+2882c2884
+<   sprite: s32'clf204_28', 2
+---
+>   sprite: s32'clf204_28', 4
+3303,3304c3305,3306
+<   sprite: s32'clf205_00', 2
+<   sprite: s32'clf205_01', 2
+---
+>   sprite: s32'clf205_00', 1
+>   sprite: s32'clf205_01', 1
+5494a5497,5499
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+5596a5602,5604
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10

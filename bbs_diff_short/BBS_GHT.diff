@@ -1,0 +1,52 @@
+2797c2797
+<   physicsImpulseX: 60000
+---
+>   physicsImpulseX: 80000
+2882c2882
+<   physicsImpulseX: 40000
+---
+>   physicsImpulseX: 60000
+3060c3060
+<   sprite: s32'ght233_00', 2
+---
+>   sprite: s32'ght233_00', 1
+3063c3063
+<   sprite: s32'ght233_01', 2
+---
+>   sprite: s32'ght233_01', 1
+3065c3065
+<   sprite: s32'ght233_02', 2
+---
+>   sprite: s32'ght233_02', 1
+3068,3069c3068,3069
+<   sprite: s32'ght233_03', 2
+<   sprite: s32'ght233_04', 2
+---
+>   sprite: s32'ght233_03', 1
+>   sprite: s32'ght233_04', 1
+5016c5016
+<     untechAmount: 42
+---
+>     untechAmount: 44
+5825c5825
+<   sprite: s32'ght430_00', 2
+---
+>   sprite: s32'ght430_00', 1
+5827,5828c5827,5828
+<   sprite: s32'ght430_01', 3
+<   sprite: s32'ght430_02', 3
+---
+>   sprite: s32'ght430_01', 1
+>   sprite: s32'ght430_02', 2
+5971c5971
+<   sprite: s32'ght431_00', 3
+---
+>   sprite: s32'ght431_00', 2
+5974,5976c5974,5976
+<   sprite: s32'ght431_01', 3
+<   sprite: s32'ght431_02', 3
+<   sprite: s32'ght431_03', 3
+---
+>   sprite: s32'ght431_01', 2
+>   sprite: s32'ght431_02', 2
+>   sprite: s32'ght431_03', 2

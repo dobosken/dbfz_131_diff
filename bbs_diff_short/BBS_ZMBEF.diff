@@ -1,0 +1,4 @@
+601c601
+<   enemyHitstopAddition: 0, 5, 5
+---
+>   enemyHitstopAddition: 0, 15, 15

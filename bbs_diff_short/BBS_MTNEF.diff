@@ -1,0 +1,16 @@
+1091c1091
+<     wallBounceXVelocityPercent: 0
+---
+>     wallBounceXVelocityPercent: 30
+1351,1352c1351,1352
+<     hitAirPushbackY: 60000
+<     untechAmount: 30
+---
+>     hitAirPushbackY: 45000
+>     untechAmount: 45
+1905c1905
+<     untechAmount: 30
+---
+>     untechAmount: 39
+1907a1908
+>     AtkWallBoundWaitTime: 14

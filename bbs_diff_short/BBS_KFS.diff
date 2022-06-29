@@ -1,0 +1,25 @@
+2889a2890,2893
+>   checkInput: (INPUT_ANY_FORWARD)
+>   if: (VARIABLE), (Result)
+>     physicsImpulseX: 95000
+>     endIf: 
+3372a3377,3379
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+3475,3477c3482,3484
+<   sprite: s32'kfs401_19', 3
+<   sprite: s32'kfs401_20', 3
+<   sprite: s32'kfs401_21', 3
+---
+>   sprite: s32'kfs401_19', 2
+>   sprite: s32'kfs401_20', 2
+>   sprite: s32'kfs401_21', 1
+3930c3937
+<   sprite: s32'kfs403_17', 3
+---
+>   sprite: s32'kfs403_17', 2
+4036c4043
+<   sprite: s32'kfs403_17', 3
+---
+>   sprite: s32'kfs403_17', 1

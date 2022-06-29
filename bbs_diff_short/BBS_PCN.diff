@@ -1,0 +1,14 @@
+2431a2432
+>     pushbackX: 200
+2545a2547
+>   EffectForLanding: 100, 1, 0
+3486a3489
+>   headInvul: 1
+3507a3511
+>   headInvul: 0
+3600a3605
+>     enableJumpCancel: 1
+4262c4267
+<   sprite: s32'pcn400_03', 15
+---
+>   sprite: s32'pcn400_03', 10

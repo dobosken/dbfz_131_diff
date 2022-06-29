@@ -1,0 +1,60 @@
+3970,3977c3970,3983
+<   sprite: s32'mgs208_17', 4
+<   sprite: s32'mgs208_18', 4
+<   sprite: s32'mgs208_19', 4
+<   sprite: s32'mgs208_20', 5
+<   sprite: s32'mgs208_21', 4
+<   sprite: s32'mgs208_22', 4
+<   sprite: s32'mgs208_23', 3
+<   addPositionX: -40000
+---
+>   sprite: s32'mgs208_17', 2
+>   spriteAddTime: 4, 2, 214
+>   sprite: s32'mgs208_18', 2
+>   spriteAddTime: 4, 2, 214
+>   sprite: s32'mgs208_19', 2
+>   spriteAddTime: 4, 2, 214
+>   sprite: s32'mgs208_20', 2
+>   spriteAddTime: 5, 2, 214
+>   sprite: s32'mgs208_21', 2
+>   spriteAddTime: 4, 2, 214
+>   sprite: s32'mgs208_22', 2
+>   spriteAddTime: 4, 2, 214
+>   sprite: s32'mgs208_23', 1
+>   spriteAddTime: 3, 2, 214
+5265c5271
+<   physicsImpulseX: 150000
+---
+>   physicsImpulseX: 250000
+5367c5373
+<   physicsImpulseX: 150000
+---
+>   physicsImpulseX: 250000
+6200d6205
+<     callSubroutine: s32'Hasei_A_Init'
+6201a6207
+>     callSubroutine: s32'Hasei_A_Init'
+7132a7139,7141
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+7234a7244,7246
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+7367a7380,7382
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+7493a7509,7511
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+7628a7647,7649
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20
+7774a7796,7798
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 20

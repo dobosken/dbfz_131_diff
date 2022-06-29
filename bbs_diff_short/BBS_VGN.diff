@@ -1,0 +1,10 @@
+2590c2590
+<   sprite: s32'vgn231_13', 3
+---
+>   sprite: s32'vgn231_13', 2
+5473,5474c5473,5474
+<   sprite: s32'vgn402_16', 3
+<   sprite: s32'vgn402_17', 3
+---
+>   sprite: s32'vgn402_16', 2
+>   sprite: s32'vgn402_17', 2

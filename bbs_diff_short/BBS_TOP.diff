@@ -1,0 +1,82 @@
+3269c3269
+<   damage1: 900
+---
+>   damage1: 600
+3280a3281
+>   AtkHoseiGuardBalance: 1000
+3287c3288
+<     damage1: 1000
+---
+>     damage1: 700
+3290c3291
+<     damage1: 1100
+---
+>     damage1: 800
+3634a3636
+>     setProration: 90
+3655a3658
+>     setProration: 90
+3685a3689
+>   blockstunAmount: 12
+3698a3703
+>     setProration: 90
+3707a3713
+>     setProration: 90
+3712a3719
+>     blockstunAmount: 15
+4246a4254
+>     setProration: 90
+4258a4267
+>     setProration: 90
+4299a4309
+>     setProration: 90
+4308a4319
+>     setProration: 90
+4847c4858
+<   sprite: s32'top403_00', 2
+---
+>   sprite: s32'top403_00', 3
+4849,4850c4860,4861
+<   sprite: s32'top403_01', 2
+<   sprite: s32'top403_02', 2
+---
+>   sprite: s32'top403_01', 3
+>   sprite: s32'top403_02', 3
+4954c4965
+<   sprite: s32'top403_17', 2
+---
+>   sprite: s32'top403_17', 3
+4957,4958c4968,4969
+<   sprite: s32'top403_18', 2
+<   sprite: s32'top403_19', 2
+---
+>   sprite: s32'top403_18', 3
+>   sprite: s32'top403_19', 3
+5418a5430,5434
+>   sprite: s32'top430_15', 3
+>   sprite: s32'top430_16', 3
+>   sprite: s32'top430_14', 3
+>   sprite: s32'top430_15', 3
+>   sprite: s32'top430_16', 3
+5471a5488
+>     canGrabDuringHitstun: 0
+5480d5496
+<   enableSuperArmor: 1
+5485a5502
+>   tensionCooldown: 300
+5495a5513
+>   enableSuperArmor: 1
+5524,5525c5542,5543
+<     damage1: 100
+<     minimalDamagePercent: 21
+---
+>     damage1: 125
+>     minimalDamagePercent: 25
+5536a5555
+>     callSubroutine: s32'cmn_KuzushiHosei'
+5623,5624c5642,5643
+<   damage1: 1121
+<   minimalDamagePercent: 36
+---
+>   damage1: 1245
+>   minimalDamagePercent: 25

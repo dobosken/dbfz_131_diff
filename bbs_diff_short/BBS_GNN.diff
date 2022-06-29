@@ -1,0 +1,56 @@
+1550c1550
+<   addTensionUnscaled: 0, 2500
+---
+>   addTensionUnscaled: 0, 5000
+1580c1580
+<   addTensionUnscaled: 0, 2500
+---
+>   addTensionUnscaled: 0, 7500
+2263,2264d2262
+<     removeWhiffCancelOption: s32'NmlAtk5A'
+<     removeGatlingOption: s32'NmlAtk5A'
+2265a2264,2265
+>   checkLastStateName: s32'NmlAtk5A'
+>   gotoIfTrue: s32'Renda', 2, 0
+2283a2284,2301
+>   exitState: 
+>   beginLabel: s32'Renda'
+>   sprite: s32'gnn200_08', 2
+>   sprite: s32'gnn200_03', 3
+>   AttackVoice: 0, -1
+>   cmnSfx: s32'ARC_BTL_CMN_Furi_Hook'
+>   sprite: s32'gnn200_04', 4
+>   createObject: s32'gnn_5AEff', (PLAYER)
+>   hit: 
+>   callSubroutine: s32'cmnRendaChain_Clear_Idling'
+>   sprite: s32'gnn200_05', 3
+>   recoveryState: 
+>   enableWhiffCancel: 1
+>   sprite: s32'gnn200_06', 2
+>   sprite: s32'gnn200_07', 2
+>   sprite: s32'gnn200_08', 2
+>   enableWhiffCancel: 0
+>   sprite: s32'gnn200_09', 2
+2365a2384
+>     pushbackX: -50
+2588a2608,2615
+>   enableSuperArmor: 1
+>   superArmorType: (DODGE)
+>   superArmorLoseMid: 0
+>   superArmorLoseHigh: 0
+>   ExMutekiGuardImpossible: 0
+>   superArmorOverdriveGuard: 0
+>   superArmorBurstGuard: 0
+>   Unknown1869: 0
+2713a2741
+>   enableSuperArmor: 0
+2843c2871,2873
+<   sprite: s32'gnn205_01', 2
+---
+>   sprite: s32'gnn205_01', 1
+>   sprite: s32'gnn205_01', 1
+>   superArmorKiBlastInvul: 1
+3065a3096
+>   AtkZReversal: 1
+3083a3115
+>   AtkZReversal: 0

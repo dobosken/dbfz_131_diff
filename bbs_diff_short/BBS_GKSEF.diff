@@ -1,0 +1,22 @@
+254c254
+<         hitAirPushbackX: 20000
+---
+>         hitAirPushbackX: 30000
+255a256,258
+>         wallBounceCount: 1
+>         wallBounceXVelocityPercent: 100
+>         untechAmount: 24
+1546c1549
+<     damage1: 250
+---
+>     damage1: 270
+1829,1830c1832,1833
+<     damage1: 270
+<     minimalDamagePercent: 30
+---
+>     damage1: 280
+>     minimalDamagePercent: 31
+2100c2103
+<     damage1: 250
+---
+>     damage1: 260

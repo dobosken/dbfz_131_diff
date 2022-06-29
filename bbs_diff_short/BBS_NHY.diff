@@ -1,0 +1,27 @@
+2159c2159,2164
+<   jumpToState: s32'BBkamehameha'
+---
+>   if: (VARIABLE), (DmgAtkAngle)
+>     jumpToState: s32'GodPunisher'
+>     endIf: 
+>   else: 
+>     jumpToState: s32'BBkamehameha'
+>     endIf: 
+3760d3764
+<   recoveryState: 
+3761a3766
+>   recoveryState: 
+7751a7757,7759
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+7873a7882,7884
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+8004a8016,8018
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+8496a8511
+>     PlayerActionInitializeByCategory: 20, 1

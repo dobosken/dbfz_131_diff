@@ -1,0 +1,33 @@
+2560a2561
+>     pushbackX: 20
+2654c2655
+<       PerSpeedX: 10
+---
+>       PerSpeedX: 80
+2667c2668
+<   physicsImpulseX: 30000
+---
+>   physicsImpulseX: 50000
+2676c2677
+<   horizontalMomentum: 60
+---
+>   horizontalMomentum: 80
+3838a3840,3845
+>         ifOperation: (IS_LESSER), (VARIABLE), (EnemyFrontDistance), (STATIC), 400000
+>           exPointFReset: (ENEMY_LAND), 0, 0
+>           endIf: 
+>         else: 
+>           exPointFReset: (PLAYER_LAND), 400000, 0
+>           endElse: 
+4053a4061
+>   spriteAddTime: 1, 2, 214
+4054a4063
+>   spriteAddTime: 1, 2, 214
+4291c4300
+<   sprite: s32'aen404_05', 2
+---
+>   sprite: s32'aen404_05', 1
+4293c4302
+<   sprite: s32'aen404_06', 2
+---
+>   sprite: s32'aen404_06', 1

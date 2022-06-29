@@ -1,0 +1,56 @@
+2605c2605
+<   sprite: s32'gbr232_02', 7
+---
+>   sprite: s32'gbr232_02', 4
+2677d2676
+<       storeValue: (VARIABLE), 45, (STATIC), 1
+2687a2687,2696
+>       enableSpecialCancel: 1
+>       enableGatlings: 1
+>       enableChange: 1
+>       enableMemberChangeUltimate: 1
+>       if: (VARIABLE), (IsSparking)
+>         enableJumpCancel: 1
+>         endIf: 
+>       clearRegisteredUponCode: (FRAME_STEP)
+>       endUpon: 
+>     upon: (ON_ATTACK_HIT_MAIN_PLAYER_DAMAGE)
+3181a3191
+>   headInvul: 1
+3232a3243
+>   headInvul: 0
+3259c3270,3271
+<   sprite: s32'gbr400_01', 2
+---
+>   headInvul: 1
+>   sprite: s32'gbr400_01', 1
+3260a3273
+>   sprite: s32'gbr400_01', 1
+3332a3346
+>   headInvul: 0
+3651c3665
+<   moveToOffset: 32, 100, -600000, 150000, 7
+---
+>   moveToOffset: 32, 100, -800000, 300000, 7
+3658c3672
+<   moveToOffset: 32, 100, -600000, 150000, 1
+---
+>   moveToOffset: 32, 100, -800000, 300000, 1
+3677,3680c3691,3694
+<   sprite: s32'gbr401_03', 3
+<   sprite: s32'gbr401_04', 3
+<   sprite: s32'gbr401_05', 3
+<   sprite: s32'gbr401_03', 3
+---
+>   sprite: s32'gbr401_03', 2
+>   sprite: s32'gbr401_04', 2
+>   sprite: s32'gbr401_05', 2
+>   sprite: s32'gbr401_03', 2
+4365a4380,4382
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+4532a4550,4552
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10

@@ -1,0 +1,94 @@
+2834a2835,2836
+>   physicsImpulseX: 80000
+>   horizontalMomentum: 60
+3191c3193
+<   sprite: s32'ghu230_00', 3
+---
+>   sprite: s32'ghu230_00', 2
+3332c3334
+<   physicsImpulseX: 40000
+---
+>   physicsImpulseX: 55000
+3735,3736c3737,3738
+<   sprite: s32'ghu233_01', 2
+<   sprite: s32'ghu233_02', 2
+---
+>   sprite: s32'ghu233_01', 1
+>   sprite: s32'ghu233_02', 1
+3798d3799
+<   recoveryState: 
+3799a3801
+>   recoveryState: 
+3974c3976
+<   physicsImpulseY: 24000
+---
+>   physicsImpulseY: 10000
+3980,3981c3982,3983
+<   sprite: s32'ghu233_04', 3
+<   sprite: s32'ghu233_05', 2
+---
+>   sprite: s32'ghu233_04', 1
+>   sprite: s32'ghu233_05', 1
+3991,3998c3993,3997
+<   sprite: s32'ghu233_09', 2
+<   sprite: s32'ghu233_10', 2
+<   sprite: s32'ghu233_11', 2
+<   sprite: s32'ghu233_12', 3
+<   sprite: s32'ghu233_13', 3
+<   sprite: s32'ghu233_14', 3
+<   sprite: s32'ghu022_04', 3
+<   sprite: s32'ghu022_05', 3
+---
+>   sprite: s32'ghu233_12', 2
+>   sprite: s32'ghu233_13', 2
+>   sprite: s32'ghu233_14', 2
+>   sprite: s32'ghu022_04', 2
+>   sprite: s32'ghu022_05', 2
+4003a4003,4005
+>     addWhiffCancelOption: s32'NmlAtk5C'
+>     addWhiffCancelOption: s32'NmlAtk2C'
+>     addWhiffCancelOption: s32'NmlAtk3C'
+4004a4007,4010
+>     addWhiffCancelOption: s32'NmlAtk5D'
+>     addWhiffCancelOption: s32'Potential_AB'
+>     addWhiffCancelOption: s32'Potential_CD'
+>     addWhiffCancelOption: s32'UltimateKamehameha'
+4092a4099,4101
+>     if: (VARIABLE), 3
+>       untechAmount: 33
+>       endIf: 
+4102a4112
+>   spriteAddTime: 2, 2, 3
+4103a4114
+>   spriteAddTime: 2, 2, 3
+4118a4130,4133
+>   if: (VARIABLE), 3
+>     physicsImpulseY: 42000
+>     setGravity: 3600
+>     endIf: 
+4120c4135,4137
+<   landingRecovery: 12, 1
+---
+>   ifNot: (VARIABLE), 3
+>     landingRecovery: 12, 1
+>     endIf: 
+6348a6366,6368
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+6567c6587
+<   superFreeze: 3, 119, 112, 112
+---
+>   superFreeze: 3, 119, 140, 140
+6571c6591
+<     cameraMotion: 4660, 330059, 82783, 283, 141, 0, 54, 15, 97, 8, 1
+---
+>     cameraMotion: 4660, 330059, 82783, 283, 141, 0, 54, 15, 125, 8, 1
+6681,6684c6701,6702
+<   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 45, (STATIC), 4
+<     superFreeze: 3, 119, 8, 8
+<     cameraMotion: 4660, 330059, 82783, 283, 141, 0, 54, 0, 6, 7, 1
+<     endIf: 
+---
+>   superFreeze: 3, 119, 8, 8
+>   cameraMotion: 4660, 330059, 82783, 283, 141, 0, 54, 0, 6, 7, 1

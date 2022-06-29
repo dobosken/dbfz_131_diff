@@ -1,0 +1,8 @@
+172c172
+<         hitAirPushbackX: 20000
+---
+>         hitAirPushbackX: 30000
+173a174,176
+>         wallBounceCount: 1
+>         wallBounceXVelocityPercent: 100
+>         untechAmount: 24

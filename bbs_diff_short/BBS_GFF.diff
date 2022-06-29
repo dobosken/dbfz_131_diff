@@ -1,0 +1,19 @@
+2902c2902,2903
+<     pushbackX: 150
+---
+>     pushbackX: 250
+>     AtkHitBackForHit: 60
+2989a2991,2995
+>   checkInput: (INPUT_4)
+>   if: (VARIABLE), (Result)
+>     pushbackX: 200
+>     physicsImpulseX: 10000
+>     endIf: 
+4539c4545
+<   sprite: s32'gff401_00', 3
+---
+>   sprite: s32'gff401_00', 2
+4541c4547
+<   sprite: s32'gff401_01', 3
+---
+>   sprite: s32'gff401_01', 2

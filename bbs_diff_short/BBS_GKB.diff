@@ -1,0 +1,94 @@
+2306a2307
+>   physicsImpulseX: 50000
+2312c2313
+<   physicsImpulseX: 50000
+---
+>   physicsImpulseX: 20000
+2510a2512,2515
+>   checkInput: (INPUT_4)
+>   if: (VARIABLE), (Result)
+>     physicsImpulseX: 80000
+>     endIf: 
+2606a2612,2616
+>   checkInput: (INPUT_4)
+>   if: (VARIABLE), (Result)
+>     physicsImpulseX: 70000
+>     pushbackX: 200
+>     endIf: 
+2648a2659,2662
+>   checkInput: (INPUT_4)
+>   if: (VARIABLE), (Result)
+>     physicsImpulseX: 5000
+>     endIf: 
+2657,2661c2671,2686
+<   createObject: s32'cmn_Windpressure_Tate', (CENTER)
+<   applyTo: (PREVIOUS)
+<     modifyPositionX: 150000
+<     modifyPositionY: 300000
+<     endApply: 
+---
+>   checkInput: (INPUT_4)
+>   if: (VARIABLE), (Result)
+>     pushbackX: 180
+>     physicsImpulseX: 10000
+>     createObject: s32'cmn_Windpressure_Tate', (CENTER)
+>     applyTo: (PREVIOUS)
+>       modifyPositionY: 300000
+>       endApply: 
+>     endIf: 
+>   else: 
+>     createObject: s32'cmn_Windpressure_Tate', (CENTER)
+>     applyTo: (PREVIOUS)
+>       modifyPositionX: 150000
+>       modifyPositionY: 300000
+>       endApply: 
+>     endElse: 
+3138c3163
+<   sprite: s32'gkb400_09', 3
+---
+>   sprite: s32'gkb400_09', 2
+3140c3165
+<   sprite: s32'gkb400_10', 3
+---
+>   sprite: s32'gkb400_10', 2
+3142c3167
+<   sprite: s32'gkb400_11', 5
+---
+>   sprite: s32'gkb400_11', 2
+3185c3210
+<   sprite: s32'gkb400_09', 3
+---
+>   sprite: s32'gkb400_09', 1
+3187c3212
+<   sprite: s32'gkb400_10', 3
+---
+>   sprite: s32'gkb400_10', 1
+3189c3214
+<   sprite: s32'gkb400_11', 5
+---
+>   sprite: s32'gkb400_11', 1
+3191c3216,3217
+<   sprite: s32'gkb400_12', 3
+---
+>   sprite: s32'gkb400_12', 2
+>   spriteAddTime: 3, 2, 45
+4028c4054
+<   sprite: s32'gkb402_10', 7
+---
+>   sprite: s32'gkb402_10', 3
+4103c4129
+<   sprite: s32'gkb402_10', 8
+---
+>   sprite: s32'gkb402_10', 4
+4202c4228
+<   sprite: s32'gkb402_09', 4
+---
+>   sprite: s32'gkb402_09', 2
+4205c4231
+<   sprite: s32'gkb402_10', 8
+---
+>   sprite: s32'gkb402_10', 2
+4207c4233
+<   sprite: s32'gkb402_11', 5
+---
+>   sprite: s32'gkb402_11', 2

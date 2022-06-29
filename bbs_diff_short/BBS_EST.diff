@@ -1,0 +1,140 @@
+929c929
+<       AtkAttackRate: 125, 13, 1
+---
+>       AtkAttackRate: 135, 13, 1
+931c931
+<         AtkAttackRate: 135, 11, 0
+---
+>         AtkAttackRate: 145, 11, 0
+935c935
+<       AtkAttackRate: 105, 10, 1
+---
+>       AtkAttackRate: 115, 10, 1
+937c937
+<         AtkAttackRate: 125, 11, 0
+---
+>         AtkAttackRate: 135, 11, 0
+1900c1900,1905
+<   jumpToState: s32'Gcharge'
+---
+>   if: (VARIABLE), (DmgAtkAngle)
+>     jumpToState: s32'Gimpact'
+>     endIf: 
+>   else: 
+>     jumpToState: s32'Gcharge'
+>     endIf: 
+3432c3437,3442
+<   physicsImpulseX: 50000
+---
+>   physicsImpulseX: 75000
+>   if: (VARIABLE), (EnemyInHitstun)
+>     IfBeginCoType: 32, 2, 30
+>       PushCollisionHeight: 500000
+>       endIf: 
+>     endIf: 
+3443a3454
+>   PushCollisionHeight: -1
+3659a3671,3672
+>     whiffCancelOptionBufferTime: s32'NmlAtk6C', 10
+>     addGatlingOption: s32'NmlAtk6C'
+3687,3689c3700,3702
+<   sprite: s32'est205_00', 2
+<   sprite: s32'est205_01', 2
+<   sprite: s32'est205_02', 3
+---
+>   sprite: s32'est205_00', 1
+>   sprite: s32'est205_01', 1
+>   sprite: s32'est205_02', 2
+3829a3843
+>     addGatlingOption: s32'NmlAtk6C'
+3863a3878
+>         whiffCancelOptionBufferTime: s32'NmlAtk6C', 8
+5381,5382c5396,5400
+<   sprite: s32'est403_02', 4
+<   sprite: s32'est403_03', 4
+---
+>   spriteAddTime: 1, 2, 214
+>   sprite: s32'est403_02', 3
+>   spriteAddTime: 1, 2, 214
+>   sprite: s32'est403_03', 3
+>   spriteAddTime: 1, 2, 214
+5383a5402
+>   spriteAddTime: 1, 2, 214
+7685c7704,7706
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 
+7695c7716,7718
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 
+7728c7751,7753
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 
+7739c7764,7766
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 
+7776c7803,7805
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 
+7785c7814,7816
+<     addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>       addWhiffCancelOption: s32'Gimpact_Chain'
+>       endIf: 
+7792c7823,7825
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 
+7833c7866,7868
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 
+7842c7877,7879
+<     addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>       addWhiffCancelOption: s32'Gimpact_Chain'
+>       endIf: 
+7849c7886,7888
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 
+7888c7927,7929
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 
+7897c7938,7940
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 
+7971c8014,8016
+<   addWhiffCancelOption: s32'Gimpact_Chain'
+---
+>   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 1
+>     addWhiffCancelOption: s32'Gimpact_Chain'
+>     endIf: 

@@ -1,0 +1,129 @@
+3558c3558
+<     enableSpecialCancel: 0
+---
+>     enableSpecialCancel: 1
+5664,5665c5664,5665
+<   sprite: s32'mtn204_03', 2
+<   sprite: s32'mtn204_04', 2
+---
+>   sprite: s32'mtn204_03', 1
+>   sprite: s32'mtn204_04', 1
+6533a6534
+>     untechAmount: 30
+7049c7050
+<   sprite: s32'mtn401_56', 4
+---
+>   sprite: s32'mtn401_56', 3
+7052,7055c7053,7056
+<   sprite: s32'mtn401_57', 4
+<   sprite: s32'mtn401_58', 4
+<   sprite: s32'mtn401_59', 4
+<   sprite: s32'mtn401_60', 3
+---
+>   sprite: s32'mtn401_57', 3
+>   sprite: s32'mtn401_58', 2
+>   sprite: s32'mtn401_59', 2
+>   sprite: s32'mtn401_60', 2
+7119c7120
+<   sprite: s32'mtn401_56', 4
+---
+>   sprite: s32'mtn401_56', 3
+7121,7124c7122,7125
+<   sprite: s32'mtn401_57', 4
+<   sprite: s32'mtn401_58', 4
+<   sprite: s32'mtn401_59', 4
+<   sprite: s32'mtn401_60', 3
+---
+>   sprite: s32'mtn401_57', 3
+>   sprite: s32'mtn401_58', 2
+>   sprite: s32'mtn401_59', 2
+>   sprite: s32'mtn401_60', 2
+7190c7191
+<   sprite: s32'mtn401_56', 4
+---
+>   sprite: s32'mtn401_56', 3
+7192,7195c7193,7196
+<   sprite: s32'mtn401_57', 4
+<   sprite: s32'mtn401_58', 4
+<   sprite: s32'mtn401_59', 4
+<   sprite: s32'mtn401_60', 3
+---
+>   sprite: s32'mtn401_57', 3
+>   sprite: s32'mtn401_58', 2
+>   sprite: s32'mtn401_59', 2
+>   sprite: s32'mtn401_60', 2
+7255c7256
+<   sprite: s32'mtn401_69', 4
+---
+>   sprite: s32'mtn401_69', 3
+7259,7262c7260,7263
+<   sprite: s32'mtn401_70', 4
+<   sprite: s32'mtn401_71', 4
+<   sprite: s32'mtn401_72', 4
+<   sprite: s32'mtn401_73', 3
+---
+>   sprite: s32'mtn401_70', 3
+>   sprite: s32'mtn401_71', 2
+>   sprite: s32'mtn401_72', 2
+>   sprite: s32'mtn401_73', 2
+7316c7317
+<   sprite: s32'mtn401_69', 4
+---
+>   sprite: s32'mtn401_69', 3
+7320,7323c7321,7324
+<   sprite: s32'mtn401_70', 4
+<   sprite: s32'mtn401_71', 4
+<   sprite: s32'mtn401_72', 4
+<   sprite: s32'mtn401_73', 3
+---
+>   sprite: s32'mtn401_70', 3
+>   sprite: s32'mtn401_71', 2
+>   sprite: s32'mtn401_72', 2
+>   sprite: s32'mtn401_73', 2
+7381c7382
+<   sprite: s32'mtn401_69', 4
+---
+>   sprite: s32'mtn401_69', 3
+7385,7388c7386,7389
+<   sprite: s32'mtn401_70', 4
+<   sprite: s32'mtn401_71', 4
+<   sprite: s32'mtn401_72', 4
+<   sprite: s32'mtn401_73', 3
+---
+>   sprite: s32'mtn401_70', 3
+>   sprite: s32'mtn401_71', 2
+>   sprite: s32'mtn401_72', 2
+>   sprite: s32'mtn401_73', 2
+8392a8394,8395
+>   isAirUnblockable: 1
+>   damage2: 4
+8486a8490
+>   headInvul: 1
+8509a8514
+>   headInvul: 0
+8518a8524
+>   headInvul: 0
+8540a8547
+>   headInvul: 1
+8563a8571
+>   headInvul: 0
+8572a8581
+>   headInvul: 0
+8592a8602
+>   headInvul: 1
+8614a8625
+>   headInvul: 0
+8623a8635
+>   headInvul: 0
+8681a8694,8704
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'Homing'
+>   addWhiffCancelOption: s32'Homing1'
+>   addWhiffCancelOption: s32'Homing2'
+>   addWhiffCancelOption: s32'Homing3'
+>   addWhiffCancelOption: s32'Homing4'
+>   whiffCancelOptionBufferTime: s32'Homing', 15
+>   whiffCancelOptionBufferTime: s32'Homing1', 15
+>   whiffCancelOptionBufferTime: s32'Homing2', 15
+>   whiffCancelOptionBufferTime: s32'Homing3', 15
+>   whiffCancelOptionBufferTime: s32'Homing4', 15

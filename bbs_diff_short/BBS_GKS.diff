@@ -1,0 +1,72 @@
+3138a3139,3143
+>     blockstunAmount: 22
+>     upon: (ON_ATTACK_HIT_PLAYER_GUARD)
+>       hitStop: 21
+>       cameraShake: s32'ShakeTate', 400, 0, 25, 10
+>       endUpon: 
+3157a3163,3167
+>     blockstunAmount: 19
+>     upon: (ON_ATTACK_HIT_PLAYER_GUARD)
+>       hitStop: 21
+>       cameraShake: s32'ShakeTate', 400, 0, 25, 10
+>       endUpon: 
+3297c3307
+<   sprite: s32'gks404_00', 2
+---
+>   sprite: s32'gks404_00', 3
+3301c3311
+<   sprite: s32'gks404_01', 2
+---
+>   sprite: s32'gks404_01', 3
+3707a3718,3719
+>     isAirUnblockable: 1
+>     damage2: 4
+3716a3729,3730
+>     isAirUnblockable: 1
+>     damage2: 4
+3729a3744,3745
+>     isAirUnblockable: 1
+>     damage2: 4
+3738a3755,3756
+>     isAirUnblockable: 1
+>     damage2: 4
+3881a3900
+>   headInvul: 1
+3932a3952
+>   headInvul: 0
+3951a3972
+>   headInvul: 1
+4018a4040
+>   headInvul: 0
+4072c4094
+<   sprite: s32'gks406_05', 2
+---
+>   sprite: s32'gks406_05', 1
+4073a4096,4097
+>   sprite: s32'gks406_05', 1
+>   headInvul: 1
+4117a4142
+>   headInvul: 0
+4136c4161
+<   sprite: s32'gks406_06', 4
+---
+>   sprite: s32'gks406_06', 1
+4139a4165,4166
+>   sprite: s32'gks406_06', 3
+>   headInvul: 1
+4199a4227
+>   headInvul: 0
+4305a4334,4337
+>   removeWhiffCancelOption: s32'Kamehameha_Naname'
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+4494a4527,4530
+>   removeWhiffCancelOption: s32'AirKamehameha_Naname'
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10
+4583a4620,4622
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10

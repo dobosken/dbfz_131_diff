@@ -1,0 +1,19 @@
+2653a2654,2655
+>     whiffCancelOptionBufferTime: s32'NmlAtk5B', 8
+>     addGatlingOption: s32'NmlAtk5B'
+2681a2684
+>     addGatlingOption: s32'NmlAtkAir5B'
+3011a3015
+>     addGatlingOption: s32'NmlAtkAir5B'
+3731d3734
+<   sprite: s32'buk401_01', 3
+3732a3736
+>   sprite: s32'buk401_01', 3
+3780d3783
+<   sprite: s32'buk401_01', 3
+3781a3785
+>   sprite: s32'buk401_01', 3
+4487a4492,4494
+>   enableWhiffCancel: 1
+>   addWhiffCancelOption: s32'CmnActHomingDash'
+>   whiffCancelOptionBufferTime: s32'CmnActHomingDash', 10

@@ -1,0 +1,60 @@
+412d411
+<     disableCancelsIntoMove: 1
+515d513
+<     disableCancelsIntoMove: 1
+2680,2682c2678,2680
+<   sprite: s32'tnn231_10', 3
+<   sprite: s32'tnn231_11', 3
+<   sprite: s32'tnn231_12', 3
+---
+>   sprite: s32'tnn231_10', 2
+>   sprite: s32'tnn231_11', 2
+>   sprite: s32'tnn231_12', 2
+2788,2790c2786,2788
+<   sprite: s32'tnn204_12', 3
+<   sprite: s32'tnn204_13', 3
+<   sprite: s32'tnn204_14', 3
+---
+>   sprite: s32'tnn204_12', 2
+>   sprite: s32'tnn204_13', 2
+>   sprite: s32'tnn204_14', 2
+4826c4824
+<   physicsImpulseX: 50000
+---
+>   physicsImpulseX: 55000
+4829c4827
+<   physicsImpulseY: 20000
+---
+>   physicsImpulseY: 35000
+4831a4830
+>   PushCollisionHeightLow: 268435455
+5036a5036,5044
+>   ifOperation: (IS_GREATER_OR_EQUAL), (STATIC), 400000, (VARIABLE), 34
+>     physicsImpulseX: 25000
+>     ifOperation: (IS_GREATER_OR_EQUAL), (STATIC), -100000, (VARIABLE), 35
+>       physicsImpulseY: 20000
+>       endIf: 
+>     endIf: 
+>   ifOperation: (IS_LESSER_OR_EQUAL), (STATIC), 50000, (VARIABLE), 35
+>     physicsImpulseY: 35000
+>     endIf: 
+5038a5047
+>   spriteAddTime: 1, 2, 214
+5039a5049
+>   spriteAddTime: 1, 2, 214
+5040a5051
+>   spriteAddTime: 1, 2, 214
+5098c5109
+<   physicsImpulseX: 50000
+---
+>   physicsImpulseX: 55000
+5101c5112
+<   physicsImpulseY: 20000
+---
+>   physicsImpulseY: 35000
+5103a5115
+>   PushCollisionHeightLow: 268435455
+5342c5354
+<   sprite: s32'tnn407_00', 4
+---
+>   sprite: s32'tnn407_00', 2

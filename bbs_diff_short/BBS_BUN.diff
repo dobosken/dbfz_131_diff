@@ -1,0 +1,32 @@
+2746c2746
+<   sprite: s32'bun261_02', 2
+---
+>   sprite: s32'bun261_02', 1
+2788c2788
+<   sprite: s32'bun262_00', 2
+---
+>   sprite: s32'bun262_00', 1
+2791c2791
+<   sprite: s32'bun262_01', 2
+---
+>   sprite: s32'bun262_01', 1
+3145a3146
+>   headInvul: 1
+3160a3162
+>   headInvul: 0
+3222a3225
+>   headInvul: 1
+3237a3241
+>   headInvul: 0
+3303a3308
+>   headInvul: 1
+3327a3333
+>   headInvul: 0
+4081,4083c4087,4089
+<   sprite: s32'bun401_02', 2
+<   sprite: s32'bun401_03', 2
+<   sprite: s32'bun401_04', 3
+---
+>   sprite: s32'bun401_02', 1
+>   sprite: s32'bun401_03', 1
+>   sprite: s32'bun401_04', 2

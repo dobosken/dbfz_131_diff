@@ -1,0 +1,75 @@
+2735c2735,2738
+<   sprite: s32'jnn200_01', 2
+---
+>   sprite: s32'jnn200_01', 1
+>   sprite: s32'jnn200_01', 1
+>   physicsImpulseX: 40000
+>   horizontalMomentum: 75
+2780,2781c2783,2784
+<   sprite: s32'jnn201_02', 2
+<   sprite: s32'jnn201_03', 2
+---
+>   sprite: s32'jnn201_02', 1
+>   sprite: s32'jnn201_03', 1
+3189c3192
+<   sprite: s32'jnn230_00', 2
+---
+>   sprite: s32'jnn230_00', 1
+3208c3211
+<   sprite: s32'jnn230_01', 3
+---
+>   sprite: s32'jnn230_01', 2
+3397c3400
+<   sprite: s32'jnn204_02', 2
+---
+>   sprite: s32'jnn204_02', 1
+3401c3404
+<   sprite: s32'jnn204_04', 6
+---
+>   sprite: s32'jnn204_04', 5
+4253a4257
+>   addVelocityY: -12000
+5628c5632
+<   sprite: s32'jnn404_11', 3
+---
+>   sprite: s32'jnn404_11', 1
+5631,5633c5635,5637
+<   sprite: s32'jnn404_12', 3
+<   sprite: s32'jnn404_13', 3
+<   sprite: s32'jnn404_14', 3
+---
+>   sprite: s32'jnn404_12', 1
+>   sprite: s32'jnn404_13', 1
+>   sprite: s32'jnn404_14', 1
+5635,5638c5639,5642
+<   sprite: s32'jnn404_15', 3
+<   sprite: s32'jnn404_16', 3
+<   sprite: s32'jnn404_17', 3
+<   sprite: s32'jnn404_18', 3
+---
+>   sprite: s32'jnn404_15', 1
+>   sprite: s32'jnn404_16', 1
+>   sprite: s32'jnn404_17', 1
+>   sprite: s32'jnn404_18', 2
+5686c5690
+<   sprite: s32'jnn404_11', 3
+---
+>   sprite: s32'jnn404_11', 1
+5690,5692c5694,5696
+<   sprite: s32'jnn404_12', 3
+<   sprite: s32'jnn404_13', 3
+<   sprite: s32'jnn404_14', 3
+---
+>   sprite: s32'jnn404_12', 1
+>   sprite: s32'jnn404_13', 1
+>   sprite: s32'jnn404_14', 1
+5694,5697c5698,5701
+<   sprite: s32'jnn404_15', 3
+<   sprite: s32'jnn404_16', 3
+<   sprite: s32'jnn404_17', 3
+<   sprite: s32'jnn404_18', 3
+---
+>   sprite: s32'jnn404_15', 1
+>   sprite: s32'jnn404_16', 1
+>   sprite: s32'jnn404_17', 1
+>   sprite: s32'jnn404_18', 2

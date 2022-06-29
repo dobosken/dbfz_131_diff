@@ -1,0 +1,6 @@
+208,209c208,209
+<   sprite: s32'null', 3
+<   sprite: s32'null', 2
+---
+>   sprite: s32'null', 1
+>   sprite: s32'null', 1

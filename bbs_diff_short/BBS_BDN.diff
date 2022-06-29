@@ -1,0 +1,34 @@
+1477c1477
+<     enemyHitstopAddition: 0, 3, 3
+---
+>     enemyHitstopAddition: 0, 8, 8
+2535a2536
+>   headInvul: 1
+2537c2538
+<   physicsImpulseX: 80000
+---
+>   physicsImpulseX: 120000
+2549a2551
+>   headInvul: 0
+2860,2862c2862,2864
+<   sprite: s32'bdn205_11', 3
+<   sprite: s32'bdn205_12', 3
+<   sprite: s32'bdn205_13', 3
+---
+>   sprite: s32'bdn205_11', 2
+>   sprite: s32'bdn205_12', 2
+>   sprite: s32'bdn205_13', 2
+3132d3133
+<   sprite: s32'bdn400_02', 1
+3445d3445
+<   sprite: s32'bdn400_02ex', 1
+3549c3549
+<   sprite: s32'bdn400_02ex', 3
+---
+>   sprite: s32'bdn400_02ex', 2
+3551c3551
+<   sprite: s32'bdn400_03ex', 3
+---
+>   sprite: s32'bdn400_03ex', 1
+4596a4597
+>   blockstunAmount: 22
